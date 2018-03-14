@@ -1,0 +1,69 @@
+* { padding: 0; margin: 0; }
+
+body {
+    font: normal 100% "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+    background: #353535;
+    color: #f5f6e9;
+}
+
+ul,
+li  { list-style-type: none; }
+img { border: 0; }
+a   { outline: none; }
+
+table,
+tr,
+td {
+    border: 0;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+div.clear {
+	position: relative;
+	clear: both;
+}
+
+.hidden { display: none; }
+
+p {
+	font-size: 80%;
+	line-height: 100%;
+	color: #f6f6e9;
+}
+
+
+#wrapper {
+	margin: 50px 100px;
+	padding: 50px 100px;
+}
+
+#title {
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+#title h1 {
+	font: bold 500% "Century Schoolbook", Georgia, Times, serif;
+	line-height: 90%;
+	letter-spacing: -2px;
+}
+
+#title p {
+	font: normal 100% "Century Schoolbook", Georgia, Times, serif;
+	letter-spacing: -1px;
+}
+
+#content {
+	margin: 30px 0;
+
+}
+
+#content img {
+	text-align: center;
+	border: 1px solid #000;
+}
+
+#content p {
+	color: #000;
+}
