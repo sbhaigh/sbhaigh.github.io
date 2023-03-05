@@ -8823,7 +8823,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 
 .qt-content-primary-dark, .qt-mobile-menu,
 .qt-caption-small span {
-  background-color: #27272a !important;
+  background-color: #232323 !important;
 }
 
 .qt-content-primary-light {

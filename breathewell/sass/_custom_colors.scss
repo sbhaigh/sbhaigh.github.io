@@ -1,13 +1,9 @@
 /* COLOR TIPS: http://materializecss.com/color.html ===*/
 
 
-
-
-
 $qt-primary-color: #101010;
 $qt-primary-color-light: #4a4a4e;
-$qt-primary-color-dark: #27272a;
-
+$qt-primary-color-dark: #232323;
 
 $qt-color-accent: #2cabb8;
 $qt-color-accent-hover: #57888c;
@@ -26,10 +22,7 @@ $qt-text-color-negative: #ffffff;
 $qt-text-color-negative-light: rgba(255,255,255,0.65);
 
 
-
 /* Addiing custom palette to materializecss framework */
-
- 
 
 $primary-color: $qt-color-accent;
 $primary-color-light: $qt-color-accent-hover;
