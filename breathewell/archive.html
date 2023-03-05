@@ -1,0 +1,861 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Life Coach HTML Template</title>
+	<meta name="description" content="Life Coach HTML template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- icons -->
+	<link href='fonts/dripicons/webfont.css' rel='stylesheet' type='text/css'>
+	<link href='fonts/qticons/qticons.css' rel='stylesheet' type='text/css'>
+	<!-- slick slider -->
+	<link href='components/slick/slick.css' rel='stylesheet' type='text/css'>
+	<!-- swipebox -->
+	<link href='components/swipebox/src/css/swipebox.min.css' rel='stylesheet' type='text/css'>
+	<!-- countdown component -->
+	<link rel="stylesheet" type="text/css" href="components/countdown/css/jquery.classycountdown.css" />
+	<!-- Main css file -->
+	<link rel="stylesheet" href="css/qt-main.css">
+	<!-- INCLUDES THE CHOSEN FRAMEWORK VIA #IMPORT AND SASS -->
+	<!-- Custom typography settings and google fonts -->
+	<link rel="stylesheet" href="css/qt-typography.css">
+</head>
+
+<body>
+	<!-- QT HEADER END ================================ -->
+	<div class="qt-parentcontainer">
+
+		<!-- QT MENUBAR  ================================ -->
+		<nav class="qt-menubar nav-wrapper qt-content-primary ">
+			<!-- desktop menu  HIDDEN IN MOBILE AND TABLETS -->
+			<ul class="qt-desktopmenu hide-on-xl-and-down">
+				<li class="qt-logo-link">
+					<a href="./" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="home"></a>
+				</li>
+
+				<li><a href="index.html">Home</a>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Events</a>
+					<ul>
+						<li><a href="archive-events.html">Events archive</a></li>
+						<li><a href="single-event.html">Single event</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Blog</a>
+					<ul>
+						<li><a href="archive.html">Blog archive</a></li>
+						<li><a href="single.html">Single post</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Podcast</a>
+					<ul>
+						<li><a href="archive-podcast.html">Podcast archive</a></li>
+						<li><a href="single-podcast.html">Single podcast</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Team</a>
+					<ul>
+						<li><a href="archive-members.html">Members archive</a></li>
+						<li><a href="single-member.html">Single member</a></li>
+					</ul>
+				</li>
+				<li><a href="page-contacts.html">Contacts</a>
+				</li>
+
+				<li class="right qt-menubuttons"><a href="#!" data-expandable="#qtsearchbar" class="qt-btn qt-btn-ghost qt-scrolltop"><i class="icon dripicons-search"></i></a></li>
+				<li class="right qt-menubuttons"><a href="#!" class="qt-cartbutton qt-btn  qt-btn-ghost"><i class="icon dripicons-cart qt-i-txt"></i> 135,15€</a></li>
+
+			</ul>
+			<!-- mobile menu icon and logo VISIBLE ONLY TABLET AND MOBILE-->
+			<ul class="qt-desktopmenu hide-on-xl-only ">
+				<li><a href="#" data-activates="qt-mobile-menu" class="button-collapse qt-menu-switch qt-btn qt-btn-primary qt-btn-m"><i class="dripicons-menu"></i></a></li>
+				<li>
+					<a href="#!" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="home"></a>
+				</li>
+			</ul>
+		</nav>
+		<!-- MENU MOBILE -->
+		<div id="qt-mobile-menu" class="side-nav qt-content-primary">
+			<ul class=" qt-side-nav">
+				<li><a href="index.html">Home</a>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Events</a>
+					<ul>
+						<li><a href="archive-events.html">Events archive</a></li>
+						<li><a href="single-event.html">Single event</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Blog</a>
+					<ul>
+						<li><a href="archive.html">Blog archive</a></li>
+						<li><a href="single.html">Single post</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Podcast</a>
+					<ul>
+						<li><a href="archive-podcast.html">Podcast archive</a></li>
+						<li><a href="single-podcast.html">Single podcast</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Team</a>
+					<ul>
+						<li><a href="archive-members.html">Members archive</a></li>
+						<li><a href="single-member.html">Single member</a></li>
+					</ul>
+				</li>
+				<li><a href="page-contacts.html">Contacts</a>
+				</li>
+			</ul>
+		</div>
+		<!-- SEARCH FORM ========================= -->
+		<div id="qtsearchbar" class="qt-searchbar qt-content-primary qt-expandable">
+			<div class="qt-expandable-inner">
+				<form method="post" action="#search" class="qt-inline-form">
+					<div class="row qt-nopadding">
+						<div class="col s12 m8 l9">
+							<input placeholder="Search" value="" id="searchtex" type="text" class="validate qt-input-l">
+						</div>
+						<div class="col s12 m3 l2">
+							<input type="button" value="Search" class="qt-btn qt-btn-primary qt-btn-l qt-fullwidth">
+						</div>
+						<div class="col s12 m1 l1">
+							<a href="#!" class="qt-btn qt-btn-l qt-btn-secondary qt-fullwidth aligncenter" data-expandable="#qtsearchbar"><i class="dripicons-cross"></i></a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- SEARCH FORM END ========================= -->
+
+		<div id="maincontent" class="qt-main">
+
+			<!-- ======================= SLIDESHOW SECTION ======================= -->
+			<!-- SLIDESHOW FULLSCREEN ================================================== -->
+			<div id="qtcontents" class="qt-slickslider-container">
+				<div class="qt-slickslider qt-invisible qt-animated qt-slickslider-single qt-black-bg" data-variablewidth="true" data-arrows="true" data-dots="false" data-infinite="true" data-centermode="true" data-pauseonhover="true" data-autoplay="true" data-arrowsmobile="false"
+					data-centermodemobile="true" data-dotsmobile="true" data-variablewidthmobile="true">
+
+					<div class="qt-slick-opacity-fx qt-item">
+						<!-- ARCHIVE ITEM POST HERO ========================= -->
+						<div class="qt-part-archive-item qt-part-item-post-hero">
+							<div class="qt-item-header">
+								<div class="qt-header-top">
+									<div class="qt-feedback">
+										<a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+									</div>
+								</div>
+								<div class="qt-header-mid">
+									<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+										<ul class="qt-tags qt-tags-accent">
+											<li><a href="#">Adventure</a></li>
+										</ul>
+										<h2 class="qt-title"><a href="#read" class="qt-text-shadow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae auctor</a></h2>
+										<div class="qt-the-content qt-spacer-s small hide-on-med-and-down ">
+											<p class="qt-spacer-s qt-text-shadow qt-strong">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae auctor nisi. Sed bibendum, lectus in fringilla semper, justo lorem commodo dolor.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+									<img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+								</div>
+							</div>
+						</div>
+						<!-- ARCHIVE ITEM POST HERO END ========================= -->
+					</div>
+
+					<div class="qt-slick-opacity-fx qt-item">
+						<!-- ARCHIVE ITEM POST HERO ========================= -->
+						<div class="qt-part-archive-item qt-part-item-post-hero">
+							<div class="qt-item-header">
+								<div class="qt-header-top">
+									<div class="qt-feedback">
+										<a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+									</div>
+								</div>
+								<div class="qt-header-mid">
+									<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+										<ul class="qt-tags qt-tags-accent">
+											<li><a href="#">Adventure</a></li>
+										</ul>
+										<h2 class="qt-title"><a href="#read" class="qt-text-shadow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae auctor</a></h2>
+										<div class="qt-the-content qt-spacer-s small hide-on-med-and-down ">
+											<p class="qt-spacer-s qt-text-shadow qt-strong">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae auctor nisi. Sed bibendum, lectus in fringilla semper, justo lorem commodo dolor.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+									<img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+								</div>
+							</div>
+						</div>
+						<!-- ARCHIVE ITEM POST HERO END ========================= -->
+					</div>
+
+					<div class="qt-slick-opacity-fx qt-item">
+						<!-- ARCHIVE ITEM POST HERO ========================= -->
+						<div class="qt-part-archive-item qt-part-item-post-hero">
+							<div class="qt-item-header">
+								<div class="qt-header-top">
+									<div class="qt-feedback">
+										<a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+									</div>
+								</div>
+								<div class="qt-header-mid">
+									<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+										<ul class="qt-tags qt-tags-accent">
+											<li><a href="#">Adventure</a></li>
+										</ul>
+										<h2 class="qt-title"><a href="#read" class="qt-text-shadow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae auctor</a></h2>
+										<div class="qt-the-content qt-spacer-s small hide-on-med-and-down ">
+											<p class="qt-spacer-s qt-text-shadow qt-strong">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae auctor nisi. Sed bibendum, lectus in fringilla semper, justo lorem commodo dolor.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+									<img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+								</div>
+							</div>
+						</div>
+						<!-- ARCHIVE ITEM POST HERO END ========================= -->
+					</div>
+
+					<div class="qt-slick-opacity-fx qt-item">
+						<!-- ARCHIVE ITEM POST HERO ========================= -->
+						<div class="qt-part-archive-item qt-part-item-post-hero">
+							<div class="qt-item-header">
+								<div class="qt-header-top">
+									<div class="qt-feedback">
+										<a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+									</div>
+								</div>
+								<div class="qt-header-mid">
+									<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+										<ul class="qt-tags qt-tags-accent">
+											<li><a href="#">Adventure</a></li>
+										</ul>
+										<h2 class="qt-title"><a href="#read" class="qt-text-shadow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae auctor</a></h2>
+										<div class="qt-the-content qt-spacer-s small hide-on-med-and-down ">
+											<p class="qt-spacer-s qt-text-shadow qt-strong">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae auctor nisi. Sed bibendum, lectus in fringilla semper, justo lorem commodo dolor.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+									<img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+								</div>
+							</div>
+						</div>
+						<!-- ARCHIVE ITEM POST HERO END ========================= -->
+					</div>
+
+
+			</div>
+		</div>
+		<!-- SLIDESHOW FULLSCREEN END ================================================== -->
+
+		<!-- ======================= CONTENT SECTION ======================= -->
+		<div class="qt-container qt-vertical-padding-l ">
+			<div class="row">
+				<!-- CAPTION MED -->
+				<div class="qt-caption-med">
+					<div class="qt-caption-med-center">
+						<h2>Blog News</h2>
+						<hr>
+						<h4>Readings for daily greatness</h4>
+					</div>
+				</div>
+				<!-- CAPTION MED END -->
+
+				<hr class="qt-spacer-l">
+
+				<div class="col s12 m12 l9">
+					<!-- ARCHIVE ITEM POST FEATURED ========================= -->
+					<div class="qt-part-archive-item qt-featured">
+						<div class="qt-item-header">
+							<div class="qt-header-top">
+								<ul class="qt-tags">
+									<li><a href="#" class="qt-content-primary-dark">Sticky post</a></li>
+									<li><a href="#">Creativity</a></li>
+								</ul>
+								<div class="qt-feedback">
+									<a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+								</div>
+							</div>
+
+							<div class="qt-header-mid ">
+								<div class="qt-captions-container qt-decor-side">
+									<div class="qt-item-metas">
+										<a class="qt-author-thumb" href="#author-url">
+											<img src="imagestemplate/author-thumbnail.jpg" alt="Author" width="50" height="50">
+										</a>
+										<div class="qt-texts">
+											<p class="qt-author"><a href="#author-url">Anthony Rother</a></p>
+											<p class="qt-date">03 October 2016</p>
+										</div>
+									</div>
+									<h2 class="qt-title"><a href="#read" class="qt-text-shadow">How to generate new creative ideas every day</a></h2>
+								</div>
+							</div>
+							<div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+								<img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+							</div>
+						</div>
+						<div class="qt-item-content qt-card qt-the-content">
+							One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches
+							into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened
+							to me?"
+							<p class="qt-spacer-s"><a href="#" class="qt-btn qt-btn-l qt-btn-primary"><i class="dripicons-align-justify"></i> Read</a></p>
+						</div>
+					</div>
+					<!-- ARCHIVE ITEM POST FEATURED END ========================= -->
+					<!-- POST ITEM ========================= -->
+					<div class="qt-part-archive-item qt-part-archive-item-post">
+						<div class="qt-item-header">
+							<div class="qt-header-top">
+								<ul class="qt-tags">
+									<li><a href="#" class="qt-content-primary-dark">News</a></li>
+									<li><a href="#">Fears</a></li>
+								</ul>
+								<div class="qt-feedback">
+									<a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+								</div>
+							</div>
+							<div class="qt-header-mid">
+								<div class="qt-captions-container qt-decor-side">
+									<div class="qt-item-metas">
+										<a class="qt-author-thumb" href="#author-url">
+											<img src="imagestemplate/author-thumbnail.jpg" alt="Author" width="50" height="50">
+										</a>
+										<div class="qt-texts">
+											<p class="qt-author"><a href="#author-url">Anthony Rother</a></p>
+											<p class="qt-date">03 October 2016</p>
+										</div>
+									</div>
+									<h3 class="qt-title"><a href="#" class="qt-text-shadow">Fight against your fears to be free in your mind</a></h3>
+								</div>
+							</div>
+							<div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+								<img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+							</div>
+						</div>
+
+						<div class="qt-item-content qt-card qt-the-content">
+							One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches
+							into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened
+							to me?"
+							<p class="qt-spacer-s"><a href="#" class="qt-btn qt-btn-l qt-btn-primary"><i class="dripicons-align-justify"></i> Read</a></p>
+						</div>
+					</div>
+					<!-- POST ITEM END ========================= -->
+
+					<!-- POST ITEM ========================= -->
+					<div class="qt-part-archive-item qt-part-archive-item-post">
+						<div class="qt-item-header">
+							<div class="qt-header-top">
+								<ul class="qt-tags">
+									<li><a href="#" class="qt-content-primary-dark">News</a></li>
+									<li><a href="#">Work</a></li>
+								</ul>
+								<div class="qt-feedback">
+									<a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+								</div>
+							</div>
+							<div class="qt-header-mid">
+								<div class="qt-captions-container qt-decor-side">
+									<div class="qt-item-metas">
+										<a class="qt-author-thumb" href="#author-url">
+											<img src="imagestemplate/author-thumbnail.jpg" alt="Author" width="50" height="50">
+										</a>
+										<div class="qt-texts">
+											<p class="qt-author"><a href="#author-url">Anthony Rother</a></p>
+											<p class="qt-date">03 October 2016</p>
+										</div>
+									</div>
+									<h3 class="qt-title"><a href="#" class="qt-text-shadow">Great teamwork as secret for happyness in the workplace</a></h3>
+								</div>
+							</div>
+							<div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+								<img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+							</div>
+						</div>
+
+						<div class="qt-item-content qt-card qt-the-content">
+							One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches
+							into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened
+							to me?"
+							<p class="qt-spacer-s"><a href="#" class="qt-btn qt-btn-l qt-btn-primary"><i class="dripicons-align-justify"></i> Read</a></p>
+						</div>
+					</div>
+					<!-- POST ITEM END ========================= -->
+
+					<!-- POST ITEM ========================= -->
+					<div class="qt-part-archive-item qt-part-archive-item-post">
+						<div class="qt-item-header">
+							<div class="qt-header-top">
+								<ul class="qt-tags">
+									<li><a href="#" class="qt-content-primary-dark">News</a></li>
+									<li><a href="#">Couple psychology</a></li>
+								</ul>
+								<div class="qt-feedback">
+									<a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+								</div>
+							</div>
+							<div class="qt-header-mid">
+								<div class="qt-captions-container qt-decor-side">
+									<div class="qt-item-metas">
+										<a class="qt-author-thumb" href="#author-url">
+											<img src="imagestemplate/author-thumbnail.jpg" alt="Author" width="50" height="50">
+										</a>
+										<div class="qt-texts">
+											<p class="qt-author"><a href="#author-url">Anthony Rother</a></p>
+											<p class="qt-date">03 October 2016</p>
+										</div>
+									</div>
+									<h3 class="qt-title"><a href="#" class="qt-text-shadow">Marriage problems: avoid them with common activities</a></h3>
+								</div>
+							</div>
+							<div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+								<img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+							</div>
+						</div>
+
+						<div class="qt-item-content qt-card qt-the-content">
+							One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches
+							into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened
+							to me?"
+							<p class="qt-spacer-s"><a href="#" class="qt-btn qt-btn-l qt-btn-primary"><i class="dripicons-align-justify"></i> Read</a></p>
+						</div>
+					</div>
+					<!-- POST ITEM END ========================= -->
+
+					<!-- POST ITEM ========================= -->
+					<div class="qt-part-archive-item qt-part-archive-item-post">
+						<div class="qt-item-header">
+							<div class="qt-header-top">
+								<ul class="qt-tags">
+									<li><a href="#" class="qt-content-primary-dark">News</a></li>
+									<li><a href="#">Adventure</a></li>
+								</ul>
+								<div class="qt-feedback">
+									<a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+								</div>
+							</div>
+							<div class="qt-header-mid">
+								<div class="qt-captions-container qt-decor-side">
+									<div class="qt-item-metas">
+										<a class="qt-author-thumb" href="#author-url">
+											<img src="imagestemplate/author-thumbnail.jpg" alt="Author" width="50" height="50">
+										</a>
+										<div class="qt-texts">
+											<p class="qt-author"><a href="#author-url">Anthony Rother</a></p>
+											<p class="qt-date">03 October 2016</p>
+										</div>
+									</div>
+									<h3 class="qt-title"><a href="#" class="qt-text-shadow">Air balloons are the perfect way to see the entire world in a 80 days travel</a></h3>
+								</div>
+							</div>
+							<div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+								<img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+							</div>
+						</div>
+
+						<div class="qt-item-content qt-card qt-the-content">
+							One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches
+							into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened
+							to me?"
+							<p class="qt-spacer-s"><a href="#" class="qt-btn qt-btn-l qt-btn-primary"><i class="dripicons-align-justify"></i> Read</a></p>
+						</div>
+					</div>
+					<!-- POST ITEM END ========================= -->
+
+
+					<hr class="qt-spacer-m">
+				</div>
+				<div class="qt-sidebar col s12 m12 l3">
+					<!-- SIDEBAR ================================================== -->
+                    <div class="qt-widgets qt-sidebar-main qt-text-secondary row">
+                         <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Special offer</span></h5>
+                                 <!-- PRODUCT VERTICAL ITEM ========================= -->
+                                <div class="qt-part-archive-item qt-product qt-product-widget qt-vertical">
+                                    <div class="qt-item-header">
+                                        <div class="qt-header-top">
+                                            <ul class="qt-tags">
+                                                <li><a href="#" class="qt-content-primary-dark">Shop</a></li>
+                                                <li><a href="#">Business</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/prod-01.jpg">
+                                            <img src="imagestemplate/prod-01.jpg" alt="Featured image" width="370" height="370">
+                                        </div>
+                                    </div>
+                                    <div class="qt-item-content qt-card qt-the-content">
+                                        <h5 class="qt-ellipsis-3">Business Negotiation: learn the secrets to achieve better deals.</h5>
+                                        <p class="qt-spacer-s">
+
+                                            <a href="#" class="qt-btn qt-btn-primary"><i class="dripicons-cart"></i> <strong>24,99€</strong></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- POST VERTICAL ITEM END ========================= -->
+                            </div>
+                        </div>
+                        <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Stay Connected</span></h5> Subscribe now to the newsletter to receive weekly updates.
+                                <hr class="qt-spacer-s">
+                                <form method="post" action="#newsletter" class="qt-inline-form">
+                                    <div class="row qt-nopadding">
+                                        <div class="col s12 m8 l9">
+                                            <input placeholder="Your email" value="" type="text" class="validate qt-input-s">
+                                        </div>
+                                        <div class="col s12 m4 l3">
+                                            <input type="button" value="submit" class="qt-btn qt-btn-secondary qt-btn-s qt-fullwidth">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Recent Posts</span></h5>
+                                <!-- POST SMALL TITLE ITEM ========================= -->
+                                <div class="qt-part-archive-item qt-part-archive-item-small-title">
+                                    <div class="qt-item-header">
+                                        <div class="qt-header-top">
+                                            <ul class="qt-tags">
+                                                <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="qt-header-mid">
+                                            <div class="qt-captions-container qt-decor-side qt-decor-side-right">
+                                                <h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                            <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- POST SMALL TITLE ITEM END ========================= -->
+
+                                <!-- POST SMALL TITLE ITEM ========================= -->
+                                <div class="qt-part-archive-item qt-part-archive-item-small-title">
+                                    <div class="qt-item-header">
+                                        <div class="qt-header-top">
+                                            <ul class="qt-tags">
+                                                <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="qt-header-mid">
+                                            <div class="qt-captions-container qt-decor-side qt-decor-side-right">
+                                                <h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                            <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- POST SMALL TITLE ITEM END ========================= -->
+
+                                <!-- POST SMALL TITLE ITEM ========================= -->
+                                <div class="qt-part-archive-item qt-part-archive-item-small-title">
+                                    <div class="qt-item-header">
+                                        <div class="qt-header-top">
+                                            <ul class="qt-tags">
+                                                <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="qt-header-mid">
+                                            <div class="qt-captions-container qt-decor-side qt-decor-side-right">
+                                                <h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                            <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- POST SMALL TITLE ITEM END ========================= -->
+
+                                <!-- POST SMALL TITLE ITEM ========================= -->
+                                <div class="qt-part-archive-item qt-part-archive-item-small-title">
+                                    <div class="qt-item-header">
+                                        <div class="qt-header-top">
+                                            <ul class="qt-tags">
+                                                <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="qt-header-mid">
+                                            <div class="qt-captions-container qt-decor-side qt-decor-side-right">
+                                                <h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                            <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- POST SMALL TITLE ITEM END ========================= -->
+
+                                <!-- POST SMALL TITLE ITEM ========================= -->
+                                <div class="qt-part-archive-item qt-part-archive-item-small-title">
+                                    <div class="qt-item-header">
+                                        <div class="qt-header-top">
+                                            <ul class="qt-tags">
+                                                <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="qt-header-mid">
+                                            <div class="qt-captions-container qt-decor-side qt-decor-side-right">
+                                                <h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                            <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- POST SMALL TITLE ITEM END ========================= -->
+
+                                <!-- POST SMALL TITLE ITEM ========================= -->
+                                <div class="qt-part-archive-item qt-part-archive-item-small-title">
+                                    <div class="qt-item-header">
+                                        <div class="qt-header-top">
+                                            <ul class="qt-tags">
+                                                <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="qt-header-mid">
+                                            <div class="qt-captions-container qt-decor-side qt-decor-side-right">
+                                                <h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                            <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- POST SMALL TITLE ITEM END ========================= -->
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Sponsor</span></h5>
+                                <div class="qt-widget-sponsor qt-card">
+                                    <a href="#sponsorlink" target="_blank" rel="nofollow">
+                                        <img src="imagestemplate/sponsor.png" alt="Sponsor" width="235" height="132">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Next seminar</span></h5>
+                                <!-- ARCHIVE ITEM EVENT VERTICAL ========================= -->
+                                <div class="qt-part-archive-item qt-vertical qt-event-vertical qt-event-vertical-widget">
+                                    <div class="qt-item-header qt-negative">
+                                        <div class="qt-header-top">
+                                            <div class="qt-item-metas">
+                                                <div class="qt-day qt-thin">
+                                                    28
+                                                </div>
+                                                <div class="qt-texts qt-capfont">
+                                                    <h5 class="qt-month qt-thin">February 2017</h5>
+                                                    <h5 class="qt-city"><strong>New York</strong></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-mid">
+                                            <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                                <h4 class="qt-title"><a href="#" class="qt-text-shadow">Master in money management</a></h4>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg" >
+                                            <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="690">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ARCHIVE ITEM EVENT VERTICAL END ========================= -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SIDEBAR END ================================================== -->
+				</div>
+			</div>
+		</div>
+
+		<div class="qt-pagination qt-content-primary">
+			<!-- PAGINATION ========================= -->
+			<ul class="pagination qt-container">
+				<li class="special"><span class="qt-pagination-label qt-content-primary-dark">PAGES</span></li>
+
+				<li class="special"><a href="#!" class="qt-btn qt-btn-l qt-btn-primary"><i class="dripicons-arrow-thin-left"></i></a></li>
+				<li class="special"><a href="#!" class="qt-btn qt-btn-l qt-btn-primary"><i class="dripicons-arrow-thin-right"></i></a></li>
+
+				<li class="item active hide-on-large-and-down"><a href="#!">1</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">2</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">3</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">4</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">5</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">6</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">7</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">8</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">9</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">10</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">11</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">12</a></li>
+				<li class="item waves-effect hide-on-large-and-down"><a href="#!">13</a></li>
+			</ul>
+			<!-- PAGINATION END ========================= -->
+
+		</div>
+	</div>
+	<!-- .qt-main end -->
+	<div class="qt-footer qt-footerwidgets">
+		<div class="qt-section qt-footer-widgets qt-content-primary-light">
+			<div class="qt-container">
+				<h2 class="qt-footer-logo"><a href="./" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="logo"></a></h2>
+				<div class="qt-widgets qt-widgets-footer qt-negative qt-spacer-m row">
+					<div class="col s12 m3 l3">
+						<div class="qt-widget">
+							<h5 class="qt-widget-title qt-inline-textdeco"><span>Stay Connected</span></h5> Subscribe now to the newsletter to receive weekly updates.
+							<hr class="qt-spacer-s">
+							<form method="post" action="#newsletter" class="qt-inline-form">
+								<div class="row qt-nopadding">
+									<div class="col s12 m8 l9">
+										<input placeholder="Your email" value="" type="text" class="validate qt-input-s">
+									</div>
+									<div class="col s12 m4 l3">
+										<input type="button" value="submit" class="qt-btn qt-btn-secondary qt-btn-s qt-fullwidth">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col s12 m3 l3">
+						<div class="qt-widget">
+							<h5 class="qt-widget-title qt-inline-textdeco"><span>Contacts</span></h5>
+							<div class="qt-widget-contacts">
+								<p>
+									<i class="qticon-home"></i><a href="http://www.themes2go.xyz">www.themes2go.xyz</a>
+								</p>
+								<p>
+									<i class="qticon-at-sign"></i><a href="mailto:info@someofyoursite.com">info@yoursite.com</a>
+								</p>
+								<p>
+									<i class="qticon-phone"></i><a href="tel:1-847-555-5555">1-847-555-5555</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m3 l3">
+						<div class="qt-widget">
+							<h5 class="qt-widget-title qt-inline-textdeco"><span>Contacts</span></h5>
+							<div class="qt-widget-about">
+								<p>
+									We are a young and dynamic radio station which wants to bring happyness in your life.<br>
+									<a href="http://www.themes2go.xyz">Discover more <i class="dripicons-arrow-thin-right"></i></a>
+								</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m3 l3">
+						<div class="qt-widget">
+							<h5 class="qt-widget-title qt-inline-textdeco"><span>Main links</span></h5>
+							<ul class="qt-widget-menu qt-list-chevron">
+								<li>
+									<a href="http://www.themes2go.xyz">Home page</a>
+								</li>
+								<li>
+									<a href="http://www.themes2go.xyz">Shows schedule</a>
+								</li>
+								<li>
+									<a href="http://www.themes2go.xyz">Events archive</a>
+								</li>
+								<li>
+									<a href="http://www.themes2go.xyz">Contacts</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="qt-header-bg" data-bgimage="imagestemplate/footer.jpg">
+			</div>
+		</div>
+		<div class="qt-footer-bottom qt-content-primary-dark">
+			<div class="qt-container">
+				<div class="row">
+					<div class="col s12 m12 l8">
+						<div class="qt-footertext">
+							Copyright 2016 <a href="http://www.themes2go.xyz">Themes2Go</a> | Replace the footer details with your own
+						</div>
+						<ul class="qt-menu-footer qt-small qt-list-chevron ">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Sitemap</a></li>
+						</ul>
+					</div>
+					<div class="col s12 m12 l4">
+						<ul class="qt-menu-social">
+							<li class="right"><a href="#"><i class="qticon-linkedin"></i></a></li>
+							<li class="right"><a href="#"><i class="qticon-facebook"></i></a></li>
+							<li class="right"><a href="#"><i class="qticon-twitter"></i></a></li>
+							<li class="right"><a href="#"><i class="qticon-youtube"></i></a></li>
+							<li class="right"><a href="#"><i class="qticon-soundcloud"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	</div>
+	<!-- QT BODY END ================================ -->
+	<!-- QT FOOTER SCRIPTS ================================ -->
+	<script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<!--  JQUERY VERSION MUST MATCH WORDPRESS ACTUAL VERSION (NOW 1.12) -->
+	<script src="js/jquery-migrate.min.js"></script>
+	<!--  JQUERY VERSION MUST MATCH WORDPRESS ACTUAL VERSION (NOW 1.12) -->
+	<!-- Framework -->
+	<script src="js/materializecss/bin/materialize.min.js"></script>
+	<!-- Slick carousel and skrollr -->
+	<script src="components/slick/slick.min.js"></script>
+	<script src="components/skrollr/skrollr.min.js"></script>
+	<!-- Swipebox -->
+	<script src="components/swipebox/lib/ios-orientationchange-fix.js"></script>
+	<script src="components/swipebox/src/js/jquery.swipebox.min.js"></script>
+	<!-- Countdown -->
+	<script src="components/countdown/js/jquery.knob.js"></script>
+	<script src="components/countdown/js/jquery.throttle.js"></script>
+	<script src="components/countdown/js/jquery.classycountdown.min.js"></script>
+	<!-- Popup -->
+	<script src="components/popup/popup.js"></script>
+	<!-- MAIN JAVASCRIPT FILE ================================ -->
+	<script src="js/qt-main.js"></script>
+</body>
+
+</html>

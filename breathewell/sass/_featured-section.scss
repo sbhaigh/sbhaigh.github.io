@@ -1,0 +1,80 @@
+/*  Featured section ==========================================================================*/
+.qt-featured-section {
+	display: block;
+	width: 100%;
+	.qt-featured-section-col {
+		width: 100%;
+		padding: 80px 0;
+		display: block;
+	}
+}
+
+/*  Featured title ==========================================================================*/
+.qt-featured-title {
+	position: relative;
+	padding: 37px 10px 0 28px;
+	margin-top: -67px;
+	span {
+		z-index: 10;
+		position: relative;	
+		
+	}
+	&::before {
+		content: " ";
+		display: block;
+		position: absolute;
+		z-index: 0;
+		top: 38px;
+		left: 20px;
+		width: 50px;
+		height: 50px;
+		background: #555;
+	}
+	&::after {
+		content: " ";
+		display: block;
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+		width: 270px;
+		height: 270px;
+		border: 1px solid rgba(200,200,200, 0.4);
+	}
+}
+
+
+
+
+/*  Featured list with bullets ==========================================================================*/
+
+ul.qt-list-featured {
+	padding: 1rem 0;
+	li {
+		list-style-type: none;
+		padding: 0.5rem 0 0.5rem 3rem;
+		position: relative;
+		font-weight: strong;
+		&::before {
+			font-family: "dripicons-v2" !important;
+		    font-style: normal !important;
+		    font-weight: normal !important;
+		    font-variant: normal !important;
+		    text-transform: none !important;
+		    speak: none;
+		    line-height: 1;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    content: "\S";
+		    position: absolute;
+		    left: 0;
+		    font-size: 25px;
+		}
+	}
+}	
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+
+/* Author */
+.qt-the-content {
+	.qt-post-author {
+
+		margin-top: 2rem;
+		width: 100%;
+		display: table;
+		.qt-post-author-picture {
+			display: table-cell;
+			width: 85px;
+			a {
+				img {
+					max-width: 100%;
+					height: auto;
+					display: block;
+				}
+				width: 85px;
+				height: 85px;
+				overflow: hidden;
+				display: block;
+			}
+		}
+		.qt-post-author-data {
+			display: table-cell;
+			width: auto;
+			vertical-align: middle;
+			h4, h6 {
+				text-transform: uppercase;
+				margin-top: 0.3rem;
+				padding-left: 1.414rem;
+			}
+		}
+		.qt-post-author-link {
+			display: table-cell;
+			vertical-align: middle;
+			width: auto;
+			padding:  0 1.414rem ;
+			a.qt-btn {
+				float: right;
+				text-align: center;
+
+			}
+		}
+	}
+}

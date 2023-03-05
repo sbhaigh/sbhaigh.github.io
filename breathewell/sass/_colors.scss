@@ -1,0 +1,239 @@
+	
+
+
+/*  Text colors =============================== */
+
+body, html, .qt-content-main, .qt-negative .qt-caption-small span, .qt-paper, .qt-card   {
+	color: $qt-text-color;
+}
+
+
+.qt-text-secondary {
+	color: $qt-text-color-secondary;
+}
+.qt-color-secondary {
+	color: $qt-color-secondary;
+}
+
+*::placeholder {
+	color: $qt-text-color;
+	opacity: 0.7;
+}
+
+a, ul.qt-list-featured li::before { color: $qt-color-accent; }
+
+
+
+.qt-part-archive-item.qt-herobox .qt-item-header .qt-herobox-header { 
+	text-shadow: 0 4px 0 $qt-color-accent;
+}
+
+a:hover { color: $qt-color-accent-hover; }
+h1, h2, h3, h4, h5, h6 {
+	a {
+		color: $qt-titles-color;
+	}
+	color: $qt-titles-color;
+}
+.qt-btn {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.qt-content-main a, a.qt-logo-text span {
+	color: $qt-color-accent; 
+}
+.qt-content-aside, .qt-footer {
+	color: $qt-text-color-aside;
+	a { color: $qt-color-secondary; }
+}
+
+.qt-negative, 
+.qt-content-primary-dark,
+.qt-content-primary,
+.qt-content-primary-light,
+.qt-accent, 
+.qt-side-nav ,  
+.qt-negative h1, .qt-negative h2,.qt-negative h3,.qt-negative h4,.qt-negative h5,.qt-negative h6 {
+	a {
+		color: $qt-color-accent;
+	}
+}
+
+
+.qt-text-secondary, .qt-footerwidgets {
+	a { color: $qt-color-secondary; }
+}
+
+
+.qt-negative, 
+.qt-content-primary-dark,
+.qt-content-primary,
+.qt-content-primary-light,
+.qt-accent, .qt-btn-primary, .btn-primary,
+.qt-secondary, .qt-btn-secondary, .btn-secondary, 
+nav.qt-menubar ul.qt-desktopmenu a:hover, .qt-side-nav a, a.qt-btn-secondary,
+.qt-negative h1, .qt-negative h2,.qt-negative h3,.qt-negative h4,.qt-negative h5,.qt-negative h6,
+.qt-tags li a, a.qt-sharelink {
+	color: $qt-text-color-negative ;
+}
+
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	a {
+		color: $qt-color-accent;
+	}
+}
+
+
+.qt-text-neg {
+	color: $qt-text-color-negative;
+}
+.qt-logo-text, a.qt-btn-primary, a.qt-btn-secondary {
+	color: $qt-text-color-negative ;
+}
+
+.qt-mobile-menu, 
+.qt-menu-social a,
+.qt-menubar-top a  {
+	color: $qt-text-color-negative-light;
+}
+.qt-menubar, .qt-side-nav  {
+	a {
+		color: $qt-text-color-negative;
+	}
+}
+
+.qt-negative {
+	.qt-btn-ghost {
+		color: $qt-text-color-negative;
+	}
+}
+
+
+
+/*  =====================================================================================================================
+
+Background colors 
+
+===================================================================================================================== */
+
+body, html, .qt-body{
+	background-color:$qt-color-background;
+}
+.qt-content-desk {
+	background-color:$qt-color-background !important;
+}
+
+.qt-widgets  {
+	.qt-caption-small::after {
+		background-color: $qt-primary-color;
+	}
+}
+
+.qt-paper, .qt-card, .qt-card-s, 
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea
+ {
+	background-color: $qt-color-paper;
+}
+.qt-caption-small span {
+	background-color: $qt-primary-color; 
+}
+.qt-text-secondary .qt-caption-small span , .qt-desktopmenu li li a{
+	background-color: $qt-primary-color;
+}
+.qt-content-primary, .qt-menubar-top,  {
+	background-color: $qt-primary-color !important;
+}
+.qt-content-primary-dark, .qt-mobile-menu,
+.qt-caption-small span {
+	background-color: $qt-primary-color-dark !important; 
+}
+.qt-content-primary-light {
+	background-color: $qt-primary-color-light;
+}
+.qt-accent, .qt-btn-primary, .btn-primary, nav.qt-menubar ul.qt-desktopmenu li li a:hover, .qt-sharepage a:hover,
+.qt-btn-primary, .qt-menubar ul.qt-desktopmenu > li > a::after, .qt-btn-ghost:hover,  .qt-tags.qt-tags-accent li a, 
+.qt-menubar ul.qt-desktopmenu > li > a:not(.qt-btn-ghost):not(.qt-logo-text)::after, .pagination li.active, .qt-caption::after,
+.qt-part-archive-item.qt-herobox .qt-header-mid .qt-inline-textdeco::before, .qt-featured-title::before  {
+	background-color: $qt-color-accent ; 
+}
+a.qt-link-layer {
+	background-color: $qt-color-accent-hover ; 
+}
+.qt-secondary, .qt-btn-secondary, .btn-secondary, .qt-side-nav li li a,
+.slick-slider .slick-arrow::after, .slick-slider .slick-dots li.slick-active button, .qt-tags li a {
+	background-color: $qt-color-secondary ; 
+}
+
+.qt-negative .qt-caption-small span {
+	background-color: $qt-text-color-negative;
+}
+
+.qt-content-primary, .qt-content-primary-dark, .qt-content-primary-light, .qt-accent, .qt-btn-primary, .btn-primary, nav.qt-menubar ul.qt-desktopmenu a:hover, .qt-sharepage a:hover {
+	i {
+		opacity: 1;
+	}
+}
+
+
+/*  Border colors =============================== */
+
+.qt-inline-textdeco::after {
+	border-color:$qt-text-color;
+}
+.qt-negative .qt-inline-textdeco::after,
+.qt-menubar ul.qt-desktopmenu > li::after, 
+.qt-menubar ul.qt-desktopmenu > li > a::after,
+.qt-menubar ul.qt-desktopmenu > li > a::before ,
+.qt-menubar ul.qt-desktopmenu > li.current_page_item:hover::after, 
+.qt-menubar ul.qt-desktopmenu > li.current_page_item:hover > a::after,
+.qt-menubar ul.qt-desktopmenu > li.current_page_item:hover > a::before,
+.qt-negative .qt-caption-small, 
+.qt-negative .qt-btn-ghost{
+	border-color: $qt-text-color-negative;
+}
+.qt-menubar ul.qt-desktopmenu > li.current_page_item::after, 
+.qt-menubar ul.qt-desktopmenu > li.current_page_item > a::after,
+.qt-menubar ul.qt-desktopmenu > li.current_page_item > a::before,
+.qt-decor-side {
+	border-color: $qt-color-accent !important;
+	opacity: 1;
+}
+.qt-pageheader .qt-caption, .qt-part-archive-item.qt-herobox .qt-header-mid .qt-herobox-header {
+	border-color: $qt-color-accent;
+}
+.qt-caption-small  {
+	border-color:  $qt-primary-color;
+}
+
+
+/* desktop hover states colors
+========================================================================== */
+
+@media #{$large-and-up} {
+	/* Menu bar top  */
+	.qt-tags li a:hover, .qt-menubar-top a:hover, .qt-btn-secondary:hover, .btn-secondary:hover, .qt-btn-secondary:hover  {
+		background-color: $qt-color-secondary-hover;
+	}
+	.qt-menubar a:hover, .qt-tags.qt-tags-accent li a:hover, .qt-menu-social a:hover, .qt-part-archive-item .qt-item-header .qt-header-mid .qt-title a:hover {	
+		color: $qt-color-accent-hover ; 
+	}
+	.qt-btn-primary, .btn-primary, .qt-tags.qt-tags-accent li a, .pagination li {
+		&:hover {
+			background-color: $qt-color-accent-hover ;
+			color: $qt-text-color-negative;
+		}
+	}
+	.qt-btn-secondary:hover, .btn-secondary:hover {
+		color: $qt-text-color-negative;	
+	}
+
+	.qt-text-secondary, .qt-footerwidgets {
+		a:hover { color: $qt-color-secondary-hover; }
+	}
+}
+
+

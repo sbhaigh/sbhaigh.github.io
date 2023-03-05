@@ -1,0 +1,795 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Life Coach HTML Template</title>
+	<meta name="description" content="Life Coach HTML template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- icons -->
+	<link href='fonts/dripicons/webfont.css' rel='stylesheet' type='text/css'>
+	<link href='fonts/qticons/qticons.css' rel='stylesheet' type='text/css'>
+	<!-- slick slider -->
+	<link href='components/slick/slick.css' rel='stylesheet' type='text/css'>
+	<!-- swipebox -->
+	<link href='components/swipebox/src/css/swipebox.min.css' rel='stylesheet' type='text/css'>
+	<!-- countdown component -->
+	<link rel="stylesheet" type="text/css" href="components/countdown/css/jquery.classycountdown.css" />
+	<!-- Main css file -->
+	<link rel="stylesheet" href="css/qt-main.css">
+	<!-- INCLUDES THE CHOSEN FRAMEWORK VIA #IMPORT AND SASS -->
+	<!-- Custom typography settings and google fonts -->
+	<link rel="stylesheet" href="css/qt-typography.css">
+</head>
+<body>
+	<!-- QT HEADER END ================================ -->
+	<div class="qt-parentcontainer qt-header-transparent qt-notscrolled" data-0="@class:qt-parentcontainer qt-header-transparent qt-notscrolled" data-20="@class:qt-parentcontainer qt-header-transparent qt-scrolled">
+		<!-- QT MENUBAR  ================================ -->
+		<nav class="qt-menubar nav-wrapper qt-content-primary ">
+			<!-- desktop menu  HIDDEN IN MOBILE AND TABLETS -->
+			<ul class="qt-desktopmenu hide-on-xl-and-down">
+				<li class="qt-logo-link">
+					<a href="./" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="home"></a>
+				</li>
+
+				<li><a href="index.html">Home</a>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Events</a>
+					<ul>
+						<li><a href="archive-events.html">Events archive</a></li>
+						<li><a href="single-event.html">Single event</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Blog</a>
+					<ul>
+						<li><a href="archive.html">Blog archive</a></li>
+						<li><a href="single.html">Single post</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Podcast</a>
+					<ul>
+						<li><a href="archive-podcast.html">Podcast archive</a></li>
+						<li><a href="single-podcast.html">Single podcast</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Team</a>
+					<ul>
+						<li><a href="archive-members.html">Members archive</a></li>
+						<li><a href="single-member.html">Single member</a></li>
+					</ul>
+				</li>
+				<li><a href="page-contacts.html">Contacts</a>
+				</li>
+
+				<li class="right qt-menubuttons"><a href="#!" data-expandable="#qtsearchbar" class="qt-btn qt-btn-ghost qt-scrolltop"><i class="icon dripicons-search"></i></a></li>
+				<li class="right qt-menubuttons"><a href="#!" class="qt-cartbutton qt-btn  qt-btn-ghost"><i class="icon dripicons-cart qt-i-txt"></i> 135,15€</a></li>
+
+			</ul>
+			<!-- mobile menu icon and logo VISIBLE ONLY TABLET AND MOBILE-->
+			<ul class="qt-desktopmenu hide-on-xl-only ">
+				<li><a href="#" data-activates="qt-mobile-menu" class="button-collapse qt-menu-switch qt-btn qt-btn-primary qt-btn-m"><i class="dripicons-menu"></i></a></li>
+				<li>
+					<a href="#!" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="home"></a>
+				</li>
+			</ul>
+		</nav>
+		<!-- MENU MOBILE -->
+		<div id="qt-mobile-menu" class="side-nav qt-content-primary">
+			<ul class=" qt-side-nav">
+				<li><a href="index.html">Home</a>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Events</a>
+					<ul>
+						<li><a href="archive-events.html">Events archive</a></li>
+						<li><a href="single-event.html">Single event</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Blog</a>
+					<ul>
+						<li><a href="archive.html">Blog archive</a></li>
+						<li><a href="single.html">Single post</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Podcast</a>
+					<ul>
+						<li><a href="archive-podcast.html">Podcast archive</a></li>
+						<li><a href="single-podcast.html">Single podcast</a></li>
+					</ul>
+				</li>
+				<li class="menu-item-has-children"><a href="#!">Team</a>
+					<ul>
+						<li><a href="archive-members.html">Members archive</a></li>
+						<li><a href="single-member.html">Single member</a></li>
+					</ul>
+				</li>
+				<li><a href="page-contacts.html">Contacts</a>
+				</li>
+			</ul>
+		</div>
+		<!-- SEARCH FORM ========================= -->
+		<div id="qtsearchbar" class="qt-searchbar qt-content-primary qt-expandable">
+			<div class="qt-expandable-inner">
+				<form method="post" action="#search" class="qt-inline-form">
+					<div class="row qt-nopadding">
+						<div class="col s12 m8 l9">
+							<input placeholder="Search" value="" id="searchtex" type="text" class="validate qt-input-l">
+						</div>
+						<div class="col s12 m3 l2">
+							<input type="button" value="Search" class="qt-btn qt-btn-primary qt-btn-l qt-fullwidth">
+						</div>
+						<div class="col s12 m1 l1">
+							<a href="#!" class="qt-btn qt-btn-l qt-btn-secondary qt-fullwidth aligncenter" data-expandable="#qtsearchbar"><i class="dripicons-cross"></i></a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- SEARCH FORM END ========================= -->
+
+		<div id="maincontent" class="qt-main">
+			<!-- ======================= HEADER SECTION ======================= -->
+			<!-- HEADER MEMBERS ========================= -->
+			<div class="qt-pageheader qt-negative">
+				<div class="qt-vc">
+					<div class="qt-vi" data-top="opacity:1" data--100-top="opacity:0">
+						<div class="qt-container">
+							<ul class="qt-tags">
+								<li>
+									<a href="#">
+										Brain Trainer
+									</a>
+								</li>
+							</ul>
+							<h1 class="qt-caption qt-spacer-s">
+								Ralph Thompsons
+							</h1>
+							<ul class="qt-menu-social qt-spacer-s">
+								<li><a href="#"><i class="qticon-linkedin"></i></a></li>
+								<li><a href="#"><i class="qticon-facebook"></i></a></li>
+								<li><a href="#"><i class="qticon-twitter"></i></a></li>
+								<li><a href="#"><i class="qticon-youtube"></i></a></li>
+								<li><a href="#"><i class="qticon-soundcloud"></i></a></li>
+							</ul>
+							<a href="#qtcontents" class="qt-smoothscroll"><i class="dripicons-chevron-down qt-scroll-indicator"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="qt-header-bg" data-bgimage="imagestemplate/full-1600-700.jpg">
+					<img src="imagestemplate/full-1600-700.jpg" alt="Featured image" width="1600" height="700">
+				</div>
+			</div>
+			<!-- HEADER MEMBERS END ========================= -->
+
+			<!-- ======================= CONTENT SECTION ======================= -->
+			<div id="qtcontents" class="qt-container">
+				<div class="row qt-spacer-l">
+					<div class="col s12 m12 l1 qt-pushpin-container">
+						<div class="qt-pushpin">
+							<!-- SHARE FUNCTIONS ================================================== -->
+							<ul class="qt-sharepage qt-content-primary">
+								<li class="hide-on-med-and-down">
+									<i class="qticon-share qt-shareicon qt-content-primary-dark"></i>
+								</li>
+								<li>
+									<a class="qt-popupwindow qt-sharelink" data-sharetype="facebook" data-name="Share" data-width="600" data-height="500" target="_blank" href="#">
+										<i class="qticon-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a class="qt-popupwindow qt-sharelink" data-sharetype="twitter" data-name="Share" data-width="600" data-height="500" target="_blank" href="#">
+										<i class="qticon-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a class="qt-popupwindow qt-sharelink" data-sharetype="google" data-name="Share" data-width="600" data-height="500" target="_blank" href="#">
+										<i class="qticon-googleplus"></i>
+									</a>
+								</li>
+								<li>
+									<a class="qt-popupwindow qt-sharelink" data-sharetype="pinterest" data-name="Share" data-width="600" data-height="500" target="_blank" href="#">
+										<i class="qticon-pinterest"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="qt-btn-primary qt-sharelink">
+										<i class="dripicons-heart"></i>
+									</a>
+								</li>
+							</ul>
+							<!-- SHARE FUNCTIONS ================================================== -->
+						</div>
+						<hr class="qt-spacer-m">
+					</div>
+					<div class="col s12 m12 l8">
+						<div class="qt-the-content">
+							<h3>My mission is to help you reach your potential</h3>
+							<h4>Blockquotes</h4>
+							<p>Single line blockquote:</p>
+							<blockquote>
+								<p>Stay hungry. Stay foolish.</p>
+							</blockquote>
+							<p>Multi line blockquote with a cite reference:</p>
+							<blockquote>
+								<p>People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as
+									proud of the things we haven’t done as the things I have done. Innovation is saying no to 1,000 things. <cite>Steve Jobs – Apple Worldwide Developers’ Conference, 1997</cite></p>
+							</blockquote>
+							<h2>Tables</h2>
+							<table>
+								<tbody>
+									<tr>
+										<th>Employee</th>
+										<th class="views">Salary</th>
+										<th></th>
+									</tr>
+									<tr class="odd">
+										<td><a href="http://example.com/">Jane</a></td>
+										<td>$1</td>
+										<td>Because that’s all Steve Job’ needed for a salary.</td>
+									</tr>
+									<tr class="even">
+										<td><a href="http://example.com">John</a></td>
+										<td>$100K</td>
+										<td>For all the blogging he does.</td>
+									</tr>
+									<tr class="odd">
+										<td><a href="http://example.com/">Jane</a></td>
+										<td>$100M</td>
+										<td>Pictures are worth a thousand words, right? So Tom x 1,000.</td>
+									</tr>
+									<tr class="even">
+										<td><a href="http://example.com/">Jane</a></td>
+										<td>$100B</td>
+										<td>With hair like that?! Enough said…</td>
+									</tr>
+								</tbody>
+							</table>
+							<h2>Definition Lists</h2>
+							<dl>
+								<dt>Definition List Title</dt>
+								<dd>Definition list division.</dd>
+								<dt>Startup</dt>
+								<dd>A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.</dd>
+								<dt>#dowork</dt>
+								<dd>Coined by Rob Dyrdek and his personal body guard Christopher “Big Black” Boykins, “Do Work” works as a self motivator, to motivating your friends.</dd>
+							</dl>
+							<h2>Unordered Lists (Nested)</h2>
+							<ul>
+								<li>List item one
+									<ul>
+										<li>List item one
+											<ul>
+												<li>List item one</li>
+												<li>List item two</li>
+												<li>List item three</li>
+												<li>List item four</li>
+											</ul>
+										</li>
+										<li>List item two</li>
+										<li>List item three</li>
+										<li>List item four</li>
+									</ul>
+								</li>
+								<li>List item two</li>
+								<li>List item three</li>
+								<li>List item four</li>
+							</ul>
+							<h2>Ordered List (Nested)</h2>
+							<ol>
+								<li>List item one
+									<ol>
+										<li>List item one
+											<ol>
+												<li>List item one</li>
+												<li>List item two</li>
+												<li>List item three</li>
+												<li>List item four</li>
+											</ol>
+										</li>
+										<li>List item two</li>
+										<li>List item three</li>
+										<li>List item four</li>
+									</ol>
+								</li>
+								<li>List item two</li>
+								<li>List item three</li>
+								<li>List item four</li>
+							</ol>
+							<h2>HTML Tags</h2>
+							<p>These supported tags come from the WordPress.com code <a title="Code" href="http://en.support.wordpress.com/code/">FAQ</a>.</p>
+							<p><strong>Address Tag</strong></p>
+							<address>1 Infinite Loop<br>
+Cupertino, CA 95014<br>
+United States</address>
+							<p><strong>Anchor Tag (aka. Link)</strong></p>
+							<p>This is an example of a <a title="Apple" href="http://apple.com">link</a>.</p>
+							<p><strong>Abbreviation Tag</strong></p>
+							<p>The abbreviation <abbr title="Seriously">srsly</abbr> stands for “seriously”.</p>
+
+
+							<p><strong>Cite Tag</strong></p>
+							<p>“Code is poetry.” —<cite>Automattic</cite></p>
+							<p><strong>Code Tag</strong></p>
+							<p>You will learn later on in these tests that <code>word-wrap: break-word;</code> will be your best friend.</p>
+							<p><strong>Delete Tag</strong></p>
+							<p>This tag will let you <del>strikeout text</del>, but this tag is no longer supported in HTML5 (use the <code>&lt;strike&gt;</code> instead).</p>
+							<p><strong>Emphasize Tag</strong></p>
+							<p>The emphasize tag should <em>italicize</em> text.</p>
+							<p><strong>Insert Tag</strong></p>
+							<p>This tag should denote <ins>inserted</ins> text.</p>
+							<p><strong>Keyboard Tag</strong></p>
+							<p>This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the <code>&lt;code&gt;</code> tag.</p>
+							<p><strong>Preformatted Tag</strong></p>
+							<p>This tag styles large blocks of code.</p>
+							<pre>.post-title {
+	margin: 0 0 5px;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 1.2;
+}</pre>
+							<p><strong>Quote Tag</strong></p>
+							<p><q>Developers, developers, developers…</q> –Steve Ballmer</p>
+							<p><strong>Strong Tag</strong></p>
+							<p>This tag shows <strong>bold<strong> text.</strong></strong>
+							</p>
+							<p><strong>Subscript Tag</strong></p>
+							<p>Getting our science styling on with H<sub>2</sub>O, which should push the “2” down.</p>
+							<p><strong>Superscript Tag</strong></p>
+							<p>Still sticking with science and Isaac Newton’s E = MC<sup>2</sup>, which should lift the 2 up.</p>
+							<p><strong>Variable Tag</strong></p>
+							<p>This allows you to denote <var>variables</var>.</p>
+
+
+							<!-- POST CONTENT END ========================= -->
+
+						</div>
+						<hr class="qt-spacer-l">
+					</div>
+					<div class="qt-sidebar col s12 m12 l3">
+						<!-- SIDEBAR ================================================== -->
+					<div class="qt-widgets qt-sidebar-main qt-text-secondary row">
+						 <div class="col s12 m3 l12">
+							<div class="qt-widget">
+								<h5 class="qt-widget-title qt-inline-textdeco"><span>Special offer</span></h5>
+								 <!-- PRODUCT VERTICAL ITEM ========================= -->
+								<div class="qt-part-archive-item qt-product qt-product-widget qt-vertical">
+									<div class="qt-item-header">
+										<div class="qt-header-top">
+											<ul class="qt-tags">
+												<li><a href="#" class="qt-content-primary-dark">Shop</a></li>
+												<li><a href="#">Business</a></li>
+											</ul>
+										</div>
+
+										<div class="qt-header-bg" data-bgimage="imagestemplate/prod-01.jpg">
+											<img src="imagestemplate/prod-01.jpg" alt="Featured image" width="370" height="370">
+										</div>
+									</div>
+									<div class="qt-item-content qt-card qt-the-content">
+										<h5 class="qt-ellipsis-3">Business Negotiation: learn the secrets to achieve better deals.</h5>
+										<p class="qt-spacer-s">
+
+											<a href="#" class="qt-btn qt-btn-primary"><i class="dripicons-cart"></i> <strong>24,99€</strong></a>
+										</p>
+									</div>
+								</div>
+								<!-- POST VERTICAL ITEM END ========================= -->
+							</div>
+						</div>
+						<div class="col s12 m3 l12">
+							<div class="qt-widget">
+								<h5 class="qt-widget-title qt-inline-textdeco"><span>Stay Connected</span></h5> Subscribe now to the newsletter to receive weekly updates.
+								<hr class="qt-spacer-s">
+								<form method="post" action="#newsletter" class="qt-inline-form">
+									<div class="row qt-nopadding">
+										<div class="col s12 m8 l9">
+											<input placeholder="Your email" value="" type="text" class="validate qt-input-s">
+										</div>
+										<div class="col s12 m4 l3">
+											<input type="button" value="submit" class="qt-btn qt-btn-secondary qt-btn-s qt-fullwidth">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col s12 m3 l12">
+							<div class="qt-widget">
+								<h5 class="qt-widget-title qt-inline-textdeco"><span>Recent Posts</span></h5>
+								<!-- POST SMALL TITLE ITEM ========================= -->
+								<div class="qt-part-archive-item qt-part-archive-item-small-title">
+									<div class="qt-item-header">
+										<div class="qt-header-top">
+											<ul class="qt-tags">
+												<li><a href="#" class="qt-content-primary-dark">News</a></li>
+												<li><a href="#">Adventure</a></li>
+											</ul>
+										</div>
+										<div class="qt-header-mid">
+											<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+												<h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+											</div>
+										</div>
+										<div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+											<img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+										</div>
+									</div>
+								</div>
+								<!-- POST SMALL TITLE ITEM END ========================= -->
+
+								<!-- POST SMALL TITLE ITEM ========================= -->
+								<div class="qt-part-archive-item qt-part-archive-item-small-title">
+									<div class="qt-item-header">
+										<div class="qt-header-top">
+											<ul class="qt-tags">
+												<li><a href="#" class="qt-content-primary-dark">News</a></li>
+												<li><a href="#">Adventure</a></li>
+											</ul>
+										</div>
+										<div class="qt-header-mid">
+											<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+												<h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+											</div>
+										</div>
+										<div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+											<img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+										</div>
+									</div>
+								</div>
+								<!-- POST SMALL TITLE ITEM END ========================= -->
+
+								<!-- POST SMALL TITLE ITEM ========================= -->
+								<div class="qt-part-archive-item qt-part-archive-item-small-title">
+									<div class="qt-item-header">
+										<div class="qt-header-top">
+											<ul class="qt-tags">
+												<li><a href="#" class="qt-content-primary-dark">News</a></li>
+												<li><a href="#">Adventure</a></li>
+											</ul>
+										</div>
+										<div class="qt-header-mid">
+											<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+												<h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+											</div>
+										</div>
+										<div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+											<img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+										</div>
+									</div>
+								</div>
+								<!-- POST SMALL TITLE ITEM END ========================= -->
+
+								<!-- POST SMALL TITLE ITEM ========================= -->
+								<div class="qt-part-archive-item qt-part-archive-item-small-title">
+									<div class="qt-item-header">
+										<div class="qt-header-top">
+											<ul class="qt-tags">
+												<li><a href="#" class="qt-content-primary-dark">News</a></li>
+												<li><a href="#">Adventure</a></li>
+											</ul>
+										</div>
+										<div class="qt-header-mid">
+											<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+												<h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+											</div>
+										</div>
+										<div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+											<img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+										</div>
+									</div>
+								</div>
+								<!-- POST SMALL TITLE ITEM END ========================= -->
+
+								<!-- POST SMALL TITLE ITEM ========================= -->
+								<div class="qt-part-archive-item qt-part-archive-item-small-title">
+									<div class="qt-item-header">
+										<div class="qt-header-top">
+											<ul class="qt-tags">
+												<li><a href="#" class="qt-content-primary-dark">News</a></li>
+												<li><a href="#">Adventure</a></li>
+											</ul>
+										</div>
+										<div class="qt-header-mid">
+											<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+												<h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+											</div>
+										</div>
+										<div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+											<img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+										</div>
+									</div>
+								</div>
+								<!-- POST SMALL TITLE ITEM END ========================= -->
+
+								<!-- POST SMALL TITLE ITEM ========================= -->
+								<div class="qt-part-archive-item qt-part-archive-item-small-title">
+									<div class="qt-item-header">
+										<div class="qt-header-top">
+											<ul class="qt-tags">
+												<li><a href="#" class="qt-content-primary-dark">News</a></li>
+												<li><a href="#">Adventure</a></li>
+											</ul>
+										</div>
+										<div class="qt-header-mid">
+											<div class="qt-captions-container qt-decor-side qt-decor-side-right">
+												<h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+											</div>
+										</div>
+										<div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+											<img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+										</div>
+									</div>
+								</div>
+								<!-- POST SMALL TITLE ITEM END ========================= -->
+							</div>
+						</div>
+
+						<div class="col s12 m3 l12">
+							<div class="qt-widget">
+								<h5 class="qt-widget-title qt-inline-textdeco"><span>Sponsor</span></h5>
+								<div class="qt-widget-sponsor qt-card">
+									<a href="#sponsorlink" target="_blank" rel="nofollow">
+										<img src="imagestemplate/sponsor.png" alt="Sponsor" width="235" height="132">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m3 l12">
+							<div class="qt-widget">
+								<h5 class="qt-widget-title qt-inline-textdeco"><span>Next seminar</span></h5>
+								<!-- ARCHIVE ITEM EVENT VERTICAL ========================= -->
+								<div class="qt-part-archive-item qt-vertical qt-event-vertical qt-event-vertical-widget">
+									<div class="qt-item-header qt-negative">
+										<div class="qt-header-top">
+											<div class="qt-item-metas">
+												<div class="qt-day qt-thin">
+													28
+												</div>
+												<div class="qt-texts qt-capfont">
+													<h5 class="qt-month qt-thin">February 2017</h5>
+													<h5 class="qt-city"><strong>New York</strong></h5>
+												</div>
+											</div>
+										</div>
+										<div class="qt-header-mid">
+											<div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+												<h4 class="qt-title"><a href="#" class="qt-text-shadow">Master in money management</a></h4>
+											</div>
+										</div>
+										<div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg" >
+											<img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="690">
+										</div>
+									</div>
+								</div>
+								<!-- ARCHIVE ITEM EVENT VERTICAL END ========================= -->
+							</div>
+						</div>
+					</div>
+					<!-- SIDEBAR END ================================================== -->
+						<hr class="qt-spacer-l">
+					</div>
+				</div>
+			</div>
+
+			<!-- ======================= RELATED SECTION ======================= -->
+			<div class="qt-content-primary qt-negative qt-related-section qt-vertical-padding-l">
+				<div class="qt-container">
+					<h5 class="qt-inline-textdeco"><span>Related people</span></h5>
+					<div class="qt-related-list qt-spacer-s row">
+						<div class="col s12 m4">
+                        <!-- ARCHIVE ITEM MEMBER ========================= -->
+                        <div class="qt-part-archive-item qt-item-member">
+                            <div class="qt-item-header">
+                                <div class="qt-header-top">
+                                    <ul class="qt-tags">
+                                        <li><a href="#" class="qt-content-primary-dark">Member</a></li>
+                                        <li><a href="#tag-link">Responsible</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="qt-header-mid qt-negative">
+                                    <div class="qt-captions-container qt-decor-side qt-s">
+                                        <h5 class="qt-capfont qt-thin">HR</h5>
+                                        <h3 class="qt-title"><a href="single-member.html" class="qt-text-shadow">Camila Bills</a></h3>
+                                    </div>
+                                </div>
+                                <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                    <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="690" height="690">
+                                </div>
+                            </div>
+                            <div class="qt-item-content-xs qt-card">
+                                <p class="qt-ellipsis-3">
+                                    Donec gravida nunc non elit lacinia, a tempus est finibus. Aliquam a fringilla arcu, sit amet iaculis mauris. Phasellus varius enim vel urna viverra fringilla. Interdum et malesuada fames ac.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ARCHIVE ITEM MEMBER END ========================= -->
+                    </div>
+                    <div class="col s12 m4">
+                        <!-- ARCHIVE ITEM MEMBER ========================= -->
+                        <div class="qt-part-archive-item qt-item-member">
+                            <div class="qt-item-header">
+                                <div class="qt-header-top">
+                                    <ul class="qt-tags">
+                                        <li><a href="#" class="qt-content-primary-dark">Member</a></li>
+                                        <li><a href="#tag-link">Coach</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="qt-header-mid qt-negative">
+                                    <div class="qt-captions-container qt-decor-side qt-s">
+                                        <h5 class="qt-capfont qt-thin">Instructor</h5>
+                                        <h3 class="qt-title"><a href="single-member.html" class="qt-text-shadow">Javier Garza</a></h3>
+                                    </div>
+                                </div>
+                                <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                    <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="690" height="690">
+                                </div>
+                            </div>
+                            <div class="qt-item-content-xs qt-card">
+                                <p class="qt-ellipsis-3">
+                                    Donec gravida nunc non elit lacinia, a tempus est finibus. Aliquam a fringilla arcu, sit amet iaculis mauris. Phasellus varius enim vel urna viverra fringilla. Interdum et malesuada fames ac.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ARCHIVE ITEM MEMBER END ========================= -->
+                    </div>
+                    <div class="col s12 m4">
+                        <!-- ARCHIVE ITEM MEMBER ========================= -->
+                        <div class="qt-part-archive-item qt-item-member">
+                            <div class="qt-item-header">
+                                <div class="qt-header-top">
+                                    <ul class="qt-tags">
+                                        <li><a href="#" class="qt-content-primary-dark">Member</a></li>
+                                        <li><a href="#tag-link">Coach</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="qt-header-mid qt-negative">
+                                    <div class="qt-captions-container qt-decor-side qt-s">
+                                        <h5 class="qt-capfont qt-thin">Manager</h5>
+                                        <h3 class="qt-title"><a href="single-member.html" class="qt-text-shadow">Robyn Owens</a></h3>
+                                    </div>
+                                </div>
+                                <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                    <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="690" height="690">
+                                </div>
+                            </div>
+                            <div class="qt-item-content-xs qt-card">
+                                <p class="qt-ellipsis-3">
+                                    Donec gravida nunc non elit lacinia, a tempus est finibus. Aliquam a fringilla arcu, sit amet iaculis mauris. Phasellus varius enim vel urna viverra fringilla. Interdum et malesuada fames ac.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ARCHIVE ITEM MEMBER END ========================= -->
+                    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- .qt-main end -->
+		<div class="qt-footer qt-footerwidgets">
+			<div class="qt-section qt-footer-widgets qt-content-primary-light">
+				<div class="qt-container">
+					<h2 class="qt-footer-logo"><a href="./" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="logo"></a></h2>
+					<div class="qt-widgets qt-widgets-footer qt-negative qt-spacer-m row">
+						<div class="col s12 m3 l3">
+							<div class="qt-widget">
+								<h5 class="qt-widget-title qt-inline-textdeco"><span>Stay Connected</span></h5> Subscribe now to the newsletter to receive weekly updates.
+								<hr class="qt-spacer-s">
+								<form method="post" action="#newsletter" class="qt-inline-form">
+									<div class="row qt-nopadding">
+										<div class="col s12 m8 l9">
+											<input placeholder="Your email" value="" type="text" class="validate qt-input-s">
+										</div>
+										<div class="col s12 m4 l3">
+											<input type="button" value="submit" class="qt-btn qt-btn-secondary qt-btn-s qt-fullwidth">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col s12 m3 l3">
+							<div class="qt-widget">
+								<h5 class="qt-widget-title qt-inline-textdeco"><span>Contacts</span></h5>
+								<div class="qt-widget-contacts">
+									<p>
+										<i class="qticon-home"></i><a href="http://www.themes2go.xyz">www.themes2go.xyz</a>
+									</p>
+									<p>
+										<i class="qticon-at-sign"></i><a href="mailto:info@someofyoursite.com">info@yoursite.com</a>
+									</p>
+									<p>
+										<i class="qticon-phone"></i><a href="tel:1-847-555-5555">1-847-555-5555</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m3 l3">
+							<div class="qt-widget">
+								<h5 class="qt-widget-title qt-inline-textdeco"><span>Contacts</span></h5>
+								<div class="qt-widget-about">
+									<p>
+										We are a young and dynamic radio station which wants to bring happyness in your life.<br>
+										<a href="http://www.themes2go.xyz">Discover more <i class="dripicons-arrow-thin-right"></i></a>
+									</p>
+
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m3 l3">
+							<div class="qt-widget">
+								<h5 class="qt-widget-title qt-inline-textdeco"><span>Main links</span></h5>
+								<ul class="qt-widget-menu qt-list-chevron">
+									<li>
+										<a href="http://www.themes2go.xyz">Home page</a>
+									</li>
+									<li>
+										<a href="http://www.themes2go.xyz">Shows schedule</a>
+									</li>
+									<li>
+										<a href="http://www.themes2go.xyz">Events archive</a>
+									</li>
+									<li>
+										<a href="http://www.themes2go.xyz">Contacts</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="qt-header-bg" data-bgimage="imagestemplate/footer.jpg">
+				</div>
+			</div>
+			<div class="qt-footer-bottom qt-content-primary-dark">
+				<div class="qt-container">
+					<div class="row">
+						<div class="col s12 m12 l8">
+							<div class="qt-footertext">
+								Copyright 2016 <a href="http://www.themes2go.xyz">Themes2Go</a> | Replace the footer details with your own
+							</div>
+							<ul class="qt-menu-footer qt-small qt-list-chevron ">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul>
+						</div>
+						<div class="col s12 m12 l4">
+							<ul class="qt-menu-social">
+								<li class="right"><a href="#"><i class="qticon-linkedin"></i></a></li>
+								<li class="right"><a href="#"><i class="qticon-facebook"></i></a></li>
+								<li class="right"><a href="#"><i class="qticon-twitter"></i></a></li>
+								<li class="right"><a href="#"><i class="qticon-youtube"></i></a></li>
+								<li class="right"><a href="#"><i class="qticon-soundcloud"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- QT BODY END ================================ -->
+	<!-- QT FOOTER SCRIPTS ================================ -->
+	<script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<!--  JQUERY VERSION MUST MATCH WORDPRESS ACTUAL VERSION (NOW 1.12) -->
+	<script src="js/jquery-migrate.min.js"></script>
+	<!--  JQUERY VERSION MUST MATCH WORDPRESS ACTUAL VERSION (NOW 1.12) -->
+	<!-- Framework -->
+	<script src="js/materializecss/bin/materialize.min.js"></script>
+	<!-- Slick carousel and skrollr -->
+	<script src="components/slick/slick.min.js"></script>
+	<script src="components/skrollr/skrollr.min.js"></script>
+	<!-- Swipebox -->
+	<script src="components/swipebox/lib/ios-orientationchange-fix.js"></script>
+	<script src="components/swipebox/src/js/jquery.swipebox.min.js"></script>
+	<!-- Countdown -->
+	<script src="components/countdown/js/jquery.knob.js"></script>
+	<script src="components/countdown/js/jquery.throttle.js"></script>
+	<script src="components/countdown/js/jquery.classycountdown.min.js"></script>
+	<!-- Popup -->
+	<script src="components/popup/popup.js"></script>
+	<!-- MAIN JAVASCRIPT FILE ================================ -->
+	<script src="js/qt-main.js"></script>
+</body>
+</html>

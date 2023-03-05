@@ -1,0 +1,577 @@
+/* Archive items: base for styling any archive items. Some may differ for size and proportions.
+   ========================================================================== */
+.qt-part-archive-item {
+	margin-bottom: 40px;
+	.qt-item-header {
+		position: relative;
+		background: #000;
+		color: #fff;
+		.qt-header-top {
+			position: relative;
+			display: table;
+			z-index: 2;
+			width: 100%;
+			.qt-feedback {
+				display: table-cell;
+				width: auto;
+				line-height: 35px;
+				font-size: 13px;
+				font-weight: bold;
+				i {
+					margin: 0 6px;
+					font-size: 23px;
+					position: relative;
+					top: 6px;
+					opacity: 1;
+				}
+				a {
+					color: #fff;
+				}
+			}
+		}
+		.qt-header-mid {
+			position: relative;
+			display: block;
+			z-index: 2;
+			min-height: 200px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin: 0 auto;
+			text-align: left;
+			padding: 0 40px;
+			.qt-captions-container {
+				position: absolute;
+				bottom: 40px;
+			}
+			.qt-title {
+				a {
+					color: #fff;
+				}
+			}
+		}
+		.qt-header-bottom {
+			z-index: 2;
+			width: 100%;
+		}
+	
+		.qt-item-metas {
+			width: 100%;
+			text-align: left;
+			line-height: 1.1em;
+			font-weight: bold;
+			display: table;
+			margin-bottom: 1rem;
+			.qt-author-thumb {
+				width: 40px;	
+			    height: 40px;
+			    overflow: hidden;
+			    border: 3px solid #fff;
+			    display: table-cell;
+				float: left;
+				margin: 0 10px 0 0;
+			}
+			.qt-texts {
+				display: table-cell;
+				vertical-align: middle;
+				float: left;
+				color: #fff;
+				height: 30px;
+				.qt-date {
+					padding: 4px 0 0 0;
+				}
+				.qt-author {
+					font-weight: strong;
+				}
+			}
+		}
+		.qt-readmore {
+			bottom: 0;
+		}
+		
+		.qt-header-bg {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			opacity: 0.65;
+			img {
+				display: none;
+			}
+		}
+	}
+	.qt-item-content, .qt-item-content-s, .qt-item-content-xs {
+		padding: 10px;
+	}
+
+
+
+	/* Featured post
+   ========================================================================== */
+	&.qt-featured {
+		.qt-header-mid {
+			padding-top: 160px;
+			padding-bottom: 40px;
+			min-height: 450px;
+		}
+		.qt-icon-featured {
+			line-height: 40px;
+			height: 40px;
+			width: 40px;
+			display: inline-block;
+			border: 3px solid #fff;
+			text-align: center;
+		}
+		.qt-item-content {
+			font-weight: bold;
+		}
+	}
+
+	/* Normal post
+   ========================================================================== */
+	&.qt-part-archive-item-post {
+		.qt-header-mid {
+			padding-top: 160px;
+			padding-bottom: 40px;
+			min-height: 450px;
+		}
+	}
+
+	/* Post hero
+   ========================================================================== */
+	&.qt-part-item-post-hero {
+
+		.qt-item-header {
+			.qt-header-top {
+				.qt-feedback {
+					float: right;
+				}
+			}
+			.qt-tags {
+				li {
+					float: none;
+				}
+			}
+			.qt-header-mid {
+				padding: 80px 0;
+				min-height: 280px;
+				margin: 0 10px;
+				display: block;
+				text-align: right;
+				.qt-captions-container {
+					position: absolute;
+					bottom: 40px;
+				}
+				.qt-tags {
+					display: block;
+					text-align: right;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+
+	/* vertical post
+   ========================================================================== */
+	&.qt-vertical {
+		border: 1px solid #fff;
+		.qt-item-header {
+			padding: 0;
+			.qt-item-metas {
+				display: table;
+				margin: 0;
+				padding: 0 0 0 12px ;
+				vertical-align: middle;
+				.qt-author-thumb, .qt-texts {
+					float: right;
+					margin: 0 0 0 1rem;
+				}
+				padding-bottom: 1rem;
+			}
+			
+			.qt-header-mid .qt-captions-container {
+				bottom: 1.414rem;
+				right: 1rem;
+				padding: 0 1rem;
+			}
+		}
+		.qt-the-content {
+			padding: 24px;
+		}
+	}
+
+	&.qt-product {
+		.qt-item-header {
+			min-height: 370px;
+			.qt-header-bg {
+				opacity: 1;
+			}
+		}
+	}
+	&.qt-product-widget {
+		.qt-item-header {
+			min-height: 270px;
+		}
+	}
+	/* vertical event
+   ========================================================================== */
+	&.qt-event-vertical {
+		border: 1px solid #fff;
+		.qt-item-header {
+			
+			.qt-header-top {
+				.qt-item-metas {
+					display: table;
+					margin: 0;
+					padding: 1rem 0 0 12px ;
+					vertical-align: middle;
+					text-align: left;
+					.qt-day {
+						display: table-cell;
+						font-size: 50px;
+						line-height: 50px;
+						width: 70px;
+						margin: 0;
+						padding: 0;
+						vertical-align: middle;
+					}
+					.qt-texts {
+						line-height: 1em;
+						height: 50px;
+						vertical-align: middle;
+						display: table-cell;
+						width: auto;
+						margin: 0;
+						padding: 0;
+						float: left;
+						h5 {
+							padding-top: 5px;
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	
+
+
+	/* compact
+    ========================================================================== */
+	&.qt-compact {
+		.qt-item-header .qt-header-mid {
+			padding: 2rem;
+			.qt-captions-container {
+
+			}
+		}
+	}
+
+	/* events
+    ========================================================================== */
+	&.qt-item-event {
+		position: relative;
+		padding: 1.414rem 0;
+		.qt-item-header {
+			display: block;
+			position: relative;
+			padding: 0 1.414rem;
+			background: transparent;
+			width: 100%;
+			.qt-date, .qt-texts, .qt-action {
+				padding: 1.414rem;
+				display: block;
+				width: 100%;
+				vertical-align: middle;
+				span {
+					display: block;
+					clear: both;
+				}
+			}
+			
+		}
+		margin-bottom: .7rem;
+	}
+
+
+	
+
+	/* podcast
+    ========================================================================== */
+
+	&.qt-item-podcast {
+		.qt-header-mid {
+			display: table;
+			text-align: center;
+			min-height: 300px;
+		}
+		.dripicons-media-play {
+			font-size: 64px;
+		}
+		.qt-item-content-s {
+			text-align: center;
+		}
+
+	}
+
+	/* member
+    ========================================================================== */
+	&.qt-item-member {
+		.qt-item-header {
+			.qt-header-mid {
+				padding: 0 1.414rem;
+				max-width: 100%;
+				margin: 0;
+				min-height: 250px;;
+			}
+		}
+	}
+
+	/* Schedule onair large
+    ========================================================================== */
+	&.qt-part-schedule-onair-large {
+
+	}
+
+
+
+
+	/* Schedule page items
+    ========================================================================== */
+	&.qt-part-show-schedule-day-item {
+		position: relative;
+		overflow: hidden;
+		.qt-item-header {
+			.qt-header-mid {
+				min-height: 162px;
+
+				padding: 10px 40px 0 40px;
+				max-width: 100%;
+				.qt-item-title.qt-title {
+					text-align: left;
+					margin: 0;
+					a {
+						margin: 0;
+					}
+				}
+				.qt-item-det {
+					text-align: left;
+					line-height: 36px;
+					border-top: 1px solid #fff;
+					padding: 10px 0 0 0;
+					margin-top: 10px;
+					.qt-time {
+						font-size: 36px;
+						font-weight: 300;
+					}
+					.qt-am {
+						vertical-align: top;
+						position: relative;
+						top: -0.5rem;
+					}
+					.qt-day {
+						vertical-align: top;
+						float: right;
+						position: relative;
+						top: 4px;
+					}
+				}
+			}
+			.qt-info {
+				position: absolute;
+				bottom: 1rem;
+				right: 1rem;
+				color: #fff;
+				z-index: 10;
+			}
+		}
+		
+	}
+	.qt-overinfo {
+		position: absolute;
+		z-index: 100;
+		top:100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		
+		.qt-item-det {
+			text-align: left;
+			line-height: 36px;
+			padding: 1rem 40px 0.5rem 40px;
+			.qt-time {
+				font-size: 36px;
+				font-weight: 300;
+			}
+			.qt-am {
+				vertical-align: top;
+				position: relative;
+				top: -0.5rem;
+			}
+			.qt-day {
+				vertical-align: top;
+				float: right;
+				position: relative;
+				top: 4px;
+			}
+
+		}
+		.qt-more {
+			line-height: 17px;
+			font-size: 13px;
+			padding: 0.7rem 40px 0 40px;
+		}
+	}
+
+	/* Show items upcoming (with time)
+    ========================================================================== */
+	&.qt-part-archive-item-show {
+		.qt-item-header {
+			.qt-header-mid {
+				min-height: 210px;
+				padding: 40px 10px;
+				max-width: 100%;
+				.qt-time {
+					margin-bottom: 0.5rem;
+				}
+			}
+		}
+	}
+
+
+	/* Show items upcoming (with time)
+    ========================================================================== */
+	&.qt-part-archive-item-small-text {
+		.qt-item-header {
+			min-height: 170px;
+			.qt-header-bottom {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				text-align: right;
+			}
+		}
+		.qt-title {
+			margin: 1rem 0;
+			line-height: 1.2em;
+		}
+		.qt-decor-side {
+			border-width: 7px;
+		}
+	}
+
+	/* Small items with title only
+    ========================================================================== */
+	&.qt-part-archive-item-small-title {
+		margin-bottom: 4px;
+		.qt-item-header {
+			.qt-header-mid {
+			    min-height: 185px;
+			    padding: 10px 10px 30px;
+			    max-width: 100%;
+			    .qt-captions-container {
+			    	right: 1em;
+			    	bottom: 1em;
+			    }
+			    .qt-decor-side-right {
+			    	border-right: 4px solid;
+					padding-right: 7px;
+			    }
+			}
+		}
+
+	}
+
+	/* Hero Box
+    ========================================================================== */
+	&.qt-herobox{
+		margin: 0;
+		.qt-header-mid {
+			position: relative;
+			display: table;
+			min-height: 500px;
+			padding: 0;
+			.qt-herobox-header {
+				h1, h2, h3, h4, h5, h6 {
+					letter-spacing: 0;
+					line-height: 1em;
+					text-transform: uppercase;
+					margin: 0;
+					padding: 0;
+					margin-left: -0.06em;
+				}
+				h6 {
+					font-size: 13px;
+				}
+				h5 {
+					font-size: 16px;
+				}
+				h4 {
+					font-size: 20px;
+				}
+				h3 {
+					font-size: 24px;
+				}
+				h2 {
+					font-size: 30px;
+				}
+				h1 {
+					line-height: 0.9em;
+					font-size: 38px;
+
+				}
+				padding-bottom: 20px;
+				border-bottom: 8px solid;
+				text-shadow: 0 2px 0 #000;
+			}
+			.qt-inline-textdeco {
+				text-transform: none;
+				position: relative;
+				&::after {
+					border-width: 4px;
+					position: relative;
+				}
+				&::before {
+					display: block;
+					content: " ";
+					width: 35px;
+					height: 35px;
+					z-index: 0;
+					background: #999;
+					position: absolute;
+					left: -3px;
+					top: -1px;
+				}
+				span {
+					position: relative;
+					z-index: 2;
+				}
+			}
+			.qt-details {
+				position: relative;
+				col {
+					padding-bottom: 16px;
+				}
+				h3 {
+					margin-bottom: 20px;
+				}
+				p {
+					margin: 8px 0;
+					i {
+						font-size: 23px;
+						opacity: 0.8;
+						margin-right: 10px;
+					}
+					span {
+						opacity: 0.6;
+					}	
+					&:last-child {
+						margin-bottom: 20px;
+					}
+				}
+				
+			}
+		}
+	}
+}

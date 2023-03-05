@@ -1,0 +1,544 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Life Coach HTML Template</title>
+    <meta name="description" content="Life Coach HTML template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link href='fonts/dripicons/webfont.css' rel='stylesheet' type='text/css'>
+    <link href='fonts/qticons/qticons.css' rel='stylesheet' type='text/css'>
+    <!-- slick slider -->
+    <link href='components/slick/slick.css' rel='stylesheet' type='text/css'>
+    <!-- swipebox -->
+    <link href='components/swipebox/src/css/swipebox.min.css' rel='stylesheet' type='text/css'>
+    <!-- countdown component -->
+    <link rel="stylesheet" type="text/css" href="components/countdown/css/jquery.classycountdown.css" />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/qt-main.css">
+    <!-- INCLUDES THE CHOSEN FRAMEWORK VIA #IMPORT AND SASS -->
+    <!-- Custom typography settings and google fonts -->
+    <link rel="stylesheet" href="css/qt-typography.css">
+</head>
+
+<body>
+    <!-- QT HEADER END ================================ -->
+    <div class="qt-parentcontainer qt-header-transparent qt-notscrolled" data-0="@class:qt-parentcontainer qt-header-transparent qt-notscrolled" data-20="@class:qt-parentcontainer qt-header-transparent qt-scrolled">
+        <!-- QT MENUBAR  ================================ -->
+        <nav class="qt-menubar nav-wrapper qt-content-primary ">
+            <!-- desktop menu  HIDDEN IN MOBILE AND TABLETS -->
+            <ul class="qt-desktopmenu hide-on-xl-and-down">
+                <li class="qt-logo-link">
+                    <a href="./" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="home"></a>
+                </li>
+
+                <li><a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Events</a>
+                    <ul>
+                        <li><a href="archive-events.html">Events archive</a></li>
+                        <li><a href="single-event.html">Single event</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Blog</a>
+                    <ul>
+                        <li><a href="archive.html">Blog archive</a></li>
+                        <li><a href="single.html">Single post</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Podcast</a>
+                    <ul>
+                        <li><a href="archive-podcast.html">Podcast archive</a></li>
+                        <li><a href="single-podcast.html">Single podcast</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Team</a>
+                    <ul>
+                        <li><a href="archive-members.html">Members archive</a></li>
+                        <li><a href="single-member.html">Single member</a></li>
+                    </ul>
+                </li>
+                <li><a href="page-contacts.html">Contacts</a>
+                </li>
+
+                <li class="right qt-menubuttons"><a href="#!" data-expandable="#qtsearchbar" class="qt-btn qt-btn-ghost qt-scrolltop"><i class="icon dripicons-search"></i></a></li>
+                <li class="right qt-menubuttons"><a href="#!" class="qt-cartbutton qt-btn  qt-btn-ghost"><i class="icon dripicons-cart qt-i-txt"></i> 135,15€</a></li>
+
+            </ul>
+            <!-- mobile menu icon and logo VISIBLE ONLY TABLET AND MOBILE-->
+            <ul class="qt-desktopmenu hide-on-xl-only ">
+                <li><a href="#" data-activates="qt-mobile-menu" class="button-collapse qt-menu-switch qt-btn qt-btn-primary qt-btn-m"><i class="dripicons-menu"></i></a></li>
+                <li>
+                    <a href="#!" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="home"></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- MENU MOBILE -->
+        <div id="qt-mobile-menu" class="side-nav qt-content-primary">
+            <ul class=" qt-side-nav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Events</a>
+                    <ul>
+                        <li><a href="archive-events.html">Events archive</a></li>
+                        <li><a href="single-event.html">Single event</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Blog</a>
+                    <ul>
+                        <li><a href="archive.html">Blog archive</a></li>
+                        <li><a href="single.html">Single post</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Podcast</a>
+                    <ul>
+                        <li><a href="archive-podcast.html">Podcast archive</a></li>
+                        <li><a href="single-podcast.html">Single podcast</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Team</a>
+                    <ul>
+                        <li><a href="archive-members.html">Members archive</a></li>
+                        <li><a href="single-member.html">Single member</a></li>
+                    </ul>
+                </li>
+                <li><a href="page-contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <!-- SEARCH FORM ========================= -->
+        <div id="qtsearchbar" class="qt-searchbar qt-content-primary qt-expandable">
+            <div class="qt-expandable-inner">
+                <form method="post" action="#search" class="qt-inline-form">
+                    <div class="row qt-nopadding">
+                        <div class="col s12 m8 l9">
+                            <input placeholder="Search" value="" id="searchtex" type="text" class="validate qt-input-l">
+                        </div>
+                        <div class="col s12 m3 l2">
+                            <input type="button" value="Search" class="qt-btn qt-btn-primary qt-btn-l qt-fullwidth">
+                        </div>
+                        <div class="col s12 m1 l1">
+                            <a href="#!" class="qt-btn qt-btn-l qt-btn-secondary qt-fullwidth aligncenter" data-expandable="#qtsearchbar"><i class="dripicons-cross"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- SEARCH FORM END ========================= -->
+
+        <div id="maincontent" class="qt-main">
+            <!-- ======================= HEADER SECTION ======================= -->
+            <!-- HEADER CAPTION ========================= -->
+            <div class="qt-pageheader qt-negative">
+                <div class="qt-vc">
+                    <div class="qt-vi" data-top="opacity:1" data--100-top="opacity:0">
+                        <div class="qt-container">
+                            <div class="qt-event-featured-content">
+                                <ul class="qt-tags">
+                                    <li>
+                                        <a href="#">
+                                            Personal Success
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h1 class="qt-spacer-s"> How to build a strong team</h1>
+                                <h3 class="qt-spacer-s qt-thin">10 February 2018 [New York]</h3>
+                                <hr class="qt-spacer-s">
+                                <div class="qt-countdown-container qt-spacer-s">
+                                    <div id="countdown" class="ClassyCountdownDemo qt-countdown" data-end="2018-02-10"></div>
+                                </div>
+                            </div>
+                            <a href="#qtcontents" class="qt-smoothscroll"><i class="dripicons-chevron-down qt-scroll-indicator"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="qt-header-bg" data-bgimage="imagestemplate/full-1600-700.jpg" data-parallax="1">
+                    <img src="imagestemplate/full-1600-700.jpg" alt="Featured image" width="1600" height="700">
+                </div>
+            </div>
+            <!-- HEADER CAPTION END ========================= -->
+
+            <!-- ======================= CONTENT SECTION ======================= -->
+            <div id="qtcontents" class="qt-container qt-vertical-padding-l">
+                <div class="row">
+                    <div class="col s12 m12 l1 qt-pushpin-container">
+                        <div class="qt-pushpin">
+                            <!-- SHARE FUNCTIONS ================================================== -->
+                            <ul class="qt-sharepage qt-content-primary">
+                                <li class="hide-on-med-and-down">
+                                    <i class="qticon-share qt-shareicon qt-content-primary-dark"></i>
+                                </li>
+                                <li>
+                                    <a class="qt-popupwindow qt-sharelink" data-sharetype="facebook" data-name="Share" data-width="600" data-height="500" target="_blank" href="#">
+                                        <i class="qticon-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="qt-popupwindow qt-sharelink" data-sharetype="twitter" data-name="Share" data-width="600" data-height="500" target="_blank" href="#">
+                                        <i class="qticon-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="qt-popupwindow qt-sharelink" data-sharetype="google" data-name="Share" data-width="600" data-height="500" target="_blank" href="#">
+                                        <i class="qticon-googleplus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="qt-popupwindow qt-sharelink" data-sharetype="pinterest" data-name="Share" data-width="600" data-height="500" target="_blank" href="#">
+                                        <i class="qticon-pinterest"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="qt-btn-primary qt-sharelink">
+                                        <i class="dripicons-heart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- SHARE FUNCTIONS ================================================== -->
+                        </div>
+                        <hr class="qt-spacer-m">
+                    </div>
+                    <div class="col s12 m12 l8">
+                        <div class="qt-the-content">
+                            
+                            <h3>A strong team is the key to succeed, discover how to find and approach new professionals</h3>
+                            <img src="imagestemplate/large-1170-512.jpg" alt="Header image" width="1200" height="525" class="qt-img-responsive">
+                            
+
+                            <table class="table qt-eventtable ">
+                                <tbody>
+                                    <tr>
+                                        <th>Date:</th>
+                                        <td>August 5, 2017</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Location:</th>
+                                        <td>Exodus</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address:</th>
+                                        <td> 295 Center St NE Salem</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone:</th>
+                                        <td>+00 000 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Website:</th>
+                                        <td><a href="http://salem.com" target="_blank" rel="external nofollow">http://salem.com</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Event link:</th>
+                                        <td><a href="#" target="_blank" rel="external nofollow">facebook.com/eventlink</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="qt-content">
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<h4>Key points</h4>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                            </div>
+
+                            <div class="qt-map">
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.9899192531298!2d-123.04142404893491!3d44.94387287592946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54bfff0c89be210f%3A0x79aa007f04406672!2s295+Center+St+NE%2C+Salem%2C+OR+97301%2C+USA!5e0!3m2!1sen!2ses!4v1478257655617"
+                                    width="600" height="450" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qt-sidebar col s12 m12 l3">
+                        <!-- SIDEBAR ================================================== -->
+                    <div class="qt-widgets qt-sidebar-main qt-text-secondary row">
+                         <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Special offer</span></h5>
+                                 <!-- PRODUCT VERTICAL ITEM ========================= -->
+                                <div class="qt-part-archive-item qt-product qt-product-widget qt-vertical">
+                                    <div class="qt-item-header">
+                                        <div class="qt-header-top">
+                                            <ul class="qt-tags">
+                                                <li><a href="#" class="qt-content-primary-dark">Shop</a></li>
+                                                <li><a href="#">Business</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/prod-01.jpg">
+                                            <img src="imagestemplate/prod-01.jpg" alt="Featured image" width="370" height="370">
+                                        </div>
+                                    </div>
+                                    <div class="qt-item-content qt-card qt-the-content">
+                                        <h5 class="qt-ellipsis-3">Business Negotiation: learn the secrets to achieve better deals.</h5>
+                                        <p class="qt-spacer-s">
+
+                                            <a href="#" class="qt-btn qt-btn-primary"><i class="dripicons-cart"></i> <strong>24,99€</strong></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- POST VERTICAL ITEM END ========================= -->
+                            </div>
+                        </div>
+                        <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Stay Connected</span></h5> Subscribe now to the newsletter to receive weekly updates.
+                                <hr class="qt-spacer-s">
+                                <form method="post" action="#newsletter" class="qt-inline-form">
+                                    <div class="row qt-nopadding">
+                                        <div class="col s12 m8 l9">
+                                            <input placeholder="Your email" value="" type="text" class="validate qt-input-s">
+                                        </div>
+                                        <div class="col s12 m4 l3">
+                                            <input type="button" value="submit" class="qt-btn qt-btn-secondary qt-btn-s qt-fullwidth">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Recent Posts</span></h5>
+                                <!-- POST SMALL TITLE ITEM ========================= -->
+                                <div class="qt-part-archive-item qt-part-archive-item-small-title">
+                                    <div class="qt-item-header">
+                                        <div class="qt-header-top">
+                                            <ul class="qt-tags">
+                                                <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="qt-header-mid">
+                                            <div class="qt-captions-container qt-decor-side qt-decor-side-right">
+                                                <h5 class="qt-title"><a href="#read" class="qt-text-shadow">Improve your lifestile to improve your business performance.</a></h5>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/medium-690-302.jpg">
+                                            <img src="imagestemplate/medium-690-302.jpg" alt="Featured image" width="1170" height="512">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- POST SMALL TITLE ITEM END ========================= -->
+
+                               
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Sponsor</span></h5>
+                                <div class="qt-widget-sponsor qt-card">
+                                    <a href="#sponsorlink" target="_blank" rel="nofollow">
+                                        <img src="imagestemplate/sponsor.png" alt="Sponsor" width="235" height="132">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m3 l12">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Next seminar</span></h5>
+                                <!-- ARCHIVE ITEM EVENT VERTICAL ========================= -->
+                                <div class="qt-part-archive-item qt-vertical qt-event-vertical qt-event-vertical-widget">
+                                    <div class="qt-item-header qt-negative">
+                                        <div class="qt-header-top">
+                                            <div class="qt-item-metas">
+                                                <div class="qt-day qt-thin">
+                                                    28
+                                                </div>
+                                                <div class="qt-texts qt-capfont">
+                                                    <h5 class="qt-month qt-thin">February 2017</h5>
+                                                    <h5 class="qt-city"><strong>New York</strong></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-mid">
+                                            <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                                <h4 class="qt-title"><a href="#" class="qt-text-shadow">Master in money management</a></h4>
+                                            </div>
+                                        </div>
+                                        <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg" >
+                                            <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="690">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ARCHIVE ITEM EVENT VERTICAL END ========================= -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SIDEBAR END ================================================== -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================= RELATED SECTION ======================= -->
+            <div class="qt-content-primary qt-negative qt-related-section qt-vertical-padding-l">
+                <div class="qt-container">
+                    <h5 class="qt-inline-textdeco"><span>Related events</span></h5>
+                    <div class="qt-related-list qt-spacer-s">
+                       <!-- EVENT ========================= -->
+                        <div class="qt-part-archive-item qt-item-event qt-negative qt-card-s" data-bgimage="imagestemplate/large-1170-512.jpg" data-attachment="scroll" data-parallax="0">
+                            <div class="qt-item-header">
+                                <h5 class="qt-date"><span class="qt-day qt-fontsize-h1">27</span> <span class="qt-month">Jan 2017</span></h5>
+                                <h3 class="qt-texts"><span class="qt-fontsize-h5">Milan [Italy]</span><a href="#" class="qt-text-shadow">Motivation in fashion industry</a></h3>
+                                <div class="qt-action">
+                                    <a class="qt-btn qt-btn-primary" href="#">Details <i class="dripicons-arrow-thin-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- EVENT END ========================= -->
+                        <!-- EVENT ========================= -->
+                        <div class="qt-part-archive-item qt-item-event qt-negative qt-card-s" data-bgimage="imagestemplate/large-1170-512.jpg" data-attachment="scroll" data-parallax="0">
+                            <div class="qt-item-header">
+                                <h5 class="qt-date"><span class="qt-day qt-fontsize-h1">29</span> <span class="qt-month">Feb 2017</span></h5>
+                                <h3 class="qt-texts"><span class="qt-fontsize-h5">London [Great Britain]</span><a href="#" class="qt-text-shadow">Find your inner power</a></h3>
+                                <div class="qt-action">
+                                    <a class="qt-btn qt-btn-primary" href="#">Details <i class="dripicons-arrow-thin-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- EVENT END ========================= -->
+                        <!-- EVENT ========================= -->
+                        <div class="qt-part-archive-item qt-item-event qt-negative qt-card-s" data-bgimage="imagestemplate/large-1170-512.jpg" data-attachment="scroll" data-parallax="0">
+                            <div class="qt-item-header">
+                                <h5 class="qt-date"><span class="qt-day qt-fontsize-h1">03</span> <span class="qt-month">Mar 2017</span></h5>
+                                <h3 class="qt-texts"><span class="qt-fontsize-h5">New York [USA]</span><a href="#" class="qt-text-shadow">Business Manager Success</a></h3>
+                                <div class="qt-action">
+                                    <a class="qt-btn qt-btn-primary" href="#">Details <i class="dripicons-arrow-thin-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- EVENT END ========================= -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .qt-main end -->
+        <div class="qt-footer qt-footerwidgets">
+            <div class="qt-section qt-footer-widgets qt-content-primary-light">
+                <div class="qt-container">
+                    <h2 class="qt-footer-logo"><a href="./" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="logo"></a></h2>
+                    <div class="qt-widgets qt-widgets-footer qt-negative qt-spacer-m row">
+                        <div class="col s12 m3 l3">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Stay Connected</span></h5> Subscribe now to the newsletter to receive weekly updates.
+                                <hr class="qt-spacer-s">
+                                <form method="post" action="#newsletter" class="qt-inline-form">
+                                    <div class="row qt-nopadding">
+                                        <div class="col s12 m8 l9">
+                                            <input placeholder="Your email" value="" type="text" class="validate qt-input-s">
+                                        </div>
+                                        <div class="col s12 m4 l3">
+                                            <input type="button" value="submit" class="qt-btn qt-btn-secondary qt-btn-s qt-fullwidth">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col s12 m3 l3">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Contacts</span></h5>
+                                <div class="qt-widget-contacts">
+                                    <p>
+                                        <i class="qticon-home"></i><a href="http://www.themes2go.xyz">www.themes2go.xyz</a>
+                                    </p>
+                                    <p>
+                                        <i class="qticon-at-sign"></i><a href="mailto:info@someofyoursite.com">info@yoursite.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="qticon-phone"></i><a href="tel:1-847-555-5555">1-847-555-5555</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m3 l3">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Contacts</span></h5>
+                                <div class="qt-widget-about">
+                                    <p>
+                                        We are a young and dynamic radio station which wants to bring happyness in your life.<br>
+                                        <a href="http://www.themes2go.xyz">Discover more <i class="dripicons-arrow-thin-right"></i></a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m3 l3">
+                            <div class="qt-widget">
+                                <h5 class="qt-widget-title qt-inline-textdeco"><span>Main links</span></h5>
+                                <ul class="qt-widget-menu qt-list-chevron">
+                                    <li>
+                                        <a href="http://www.themes2go.xyz">Home page</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.themes2go.xyz">Shows schedule</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.themes2go.xyz">Events archive</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.themes2go.xyz">Contacts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qt-header-bg" data-bgimage="imagestemplate/footer.jpg">
+                </div>
+            </div>
+            <div class="qt-footer-bottom qt-content-primary-dark">
+                <div class="qt-container">
+                    <div class="row">
+                        <div class="col s12 m12 l8">
+                            <div class="qt-footertext">
+                                Copyright 2016 <a href="http://www.themes2go.xyz">Themes2Go</a> | Replace the footer details with your own
+                            </div>
+                            <ul class="qt-menu-footer qt-small qt-list-chevron ">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s12 m12 l4">
+                            <ul class="qt-menu-social">
+                                <li class="right"><a href="#"><i class="qticon-linkedin"></i></a></li>
+                                <li class="right"><a href="#"><i class="qticon-facebook"></i></a></li>
+                                <li class="right"><a href="#"><i class="qticon-twitter"></i></a></li>
+                                <li class="right"><a href="#"><i class="qticon-youtube"></i></a></li>
+                                <li class="right"><a href="#"><i class="qticon-soundcloud"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- QT BODY END ================================ -->
+    <!-- QT FOOTER SCRIPTS ================================ -->
+    <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <!--  JQUERY VERSION MUST MATCH WORDPRESS ACTUAL VERSION (NOW 1.12) -->
+    <script src="js/jquery-migrate.min.js"></script>
+    <!--  JQUERY VERSION MUST MATCH WORDPRESS ACTUAL VERSION (NOW 1.12) -->
+    <!-- Framework -->
+    <script src="js/materializecss/bin/materialize.min.js"></script>
+    <!-- Slick carousel and skrollr -->
+    <script src="components/slick/slick.min.js"></script>
+    <script src="components/skrollr/skrollr.min.js"></script>
+    <!-- Swipebox -->
+    <script src="components/swipebox/lib/ios-orientationchange-fix.js"></script>
+    <script src="components/swipebox/src/js/jquery.swipebox.min.js"></script>
+    <!-- Countdown -->
+    <script src="components/countdown/js/jquery.knob.js"></script>
+    <script src="components/countdown/js/jquery.throttle.js"></script>
+    <script src="components/countdown/js/jquery.classycountdown.min.js"></script>
+    <!-- Popup -->
+    <script src="components/popup/popup.js"></script>
+    <!-- MAIN JAVASCRIPT FILE ================================ -->
+    <script src="js/qt-main.js"></script>
+</body>
+
+</html>
