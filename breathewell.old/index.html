@@ -1,0 +1,950 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Life Coach HTML Template</title>
+    <meta name="description" content="Breath Well - Transformational Breathwork">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link href='fonts/dripicons/webfont.css' rel='stylesheet' type='text/css'>
+    <link href='fonts/qticons/qticons.css' rel='stylesheet' type='text/css'>
+    <!-- slick slider -->
+    <link href='components/slick/slick.css' rel='stylesheet' type='text/css'>
+    <!-- swipebox -->
+    <link href='components/swipebox/src/css/swipebox.min.css' rel='stylesheet' type='text/css'>
+    <!-- countdown component -->
+    <link rel="stylesheet" type="text/css" href="components/countdown/css/jquery.classycountdown.css" />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/qt-main.css">
+    <!-- INCLUDES THE CHOSEN FRAMEWORK VIA #IMPORT AND SASS -->
+    <!-- Custom typography settings and google fonts -->
+    <link rel="stylesheet" href="css/qt-typography.css">
+</head>
+
+<body>
+    <!-- QT HEADER END ================================ -->
+    <div class="qt-parentcontainer qt-header-transparent qt-notscrolled" data-0="@class:qt-parentcontainer qt-header-transparent qt-notscrolled" data-20="@class:qt-parentcontainer qt-header-transparent qt-scrolled">
+        <!-- QT MENUBAR  ================================ -->
+        <nav class="qt-menubar nav-wrapper qt-content-primary ">
+            <!-- desktop menu  HIDDEN IN MOBILE AND TABLETS -->
+            <ul class="qt-desktopmenu hide-on-xl-and-down">
+                <li class="qt-logo-link">
+                    <a href="./" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="home"></a>
+                </li>
+
+                <li><a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Events</a>
+                    <!-- <ul>
+                        <li><a href="archive-events.html">Events archive</a></li>
+                        <li><a href="single-event.html">Single event</a></li>
+                    </ul> -->
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Blog</a>
+                    <!-- <ul>
+                        <li><a href="archive.html">Blog archive</a></li>
+                        <li><a href="single.html">Single post</a></li>
+                    </ul> -->
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Podcast</a>
+                    <!-- <ul>
+                        <li><a href="archive-podcast.html">Podcast archive</a></li>
+                        <li><a href="single-podcast.html">Single podcast</a></li>
+                    </ul> -->
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Mick Phipps</a>
+                    <!-- <ul>
+                        <li><a href="archive-members.html">Members archive</a></li>
+                        <li><a href="single-member.html">Single member</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="<!--page-contacts.html-->">Contact</a>
+                </li>
+<!--
+                <li class="right qt-menubuttons"><a href="#!" data-expandable="#qtsearchbar" class="qt-btn qt-btn-ghost qt-scrolltop"><i class="icon dripicons-search"></i></a></li>
+                <li class="right qt-menubuttons"><a href="#!" class="qt-cartbutton qt-btn  qt-btn-ghost"><i class="icon dripicons-cart qt-i-txt"></i> 135,15€</a></li>
+-->
+            </ul>
+            <!-- mobile menu icon and logo VISIBLE ONLY TABLET AND MOBILE-->
+            <ul class="qt-desktopmenu hide-on-xl-only ">
+                <li><a href="#" data-activates="qt-mobile-menu" class="button-collapse qt-menu-switch qt-btn qt-btn-primary qt-btn-m"><i class="dripicons-menu"></i></a></li>
+                <li>
+                    <a href="#!" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="home"></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- MENU MOBILE -->
+        <div id="qt-mobile-menu" class="side-nav qt-content-primary">
+            <ul class=" qt-side-nav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Events</a>
+                    <ul>
+                        <li><a href="<!--archive-events.html-->">Events archive</a></li>
+                        <li><a href="<!--single-event.html-->">Single event</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Blog</a>
+                    <!-- <ul>
+                        <li><a href="archive.html">Blog archive</a></li>
+                        <li><a href="single.html">Single post</a></li>
+                    </ul> -->
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Podcast</a>
+                    <!-- <ul>
+                        <li><a href="archive-podcast.html">Podcast archive</a></li>
+                        <li><a href="single-podcast.html">Single podcast</a></li>
+                    </ul> -->
+                </li>
+                <li class="menu-item-has-children"><a href="#!">Mick</a>
+                    <!-- <ul>
+                        <li><a href="archive-members.html">Members archive</a></li>
+                        <li><a href="single-member.html">Single member</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="<!--page-contacts.html-->">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <!-- SEARCH FORM ========================= -->
+        <!-- <div id="qtsearchbar" class="qt-searchbar qt-content-primary qt-expandable">
+            <div class="qt-expandable-inner">
+                <form method="post" action="#search" class="qt-inline-form">
+                    <div class="row qt-nopadding">
+                        <div class="col s12 m8 l9">
+                            <input placeholder="Search" value="" id="searchtex" type="text" class="validate qt-input-l">
+                        </div>
+                        <div class="col s12 m3 l2">
+                            <input type="button" value="Search" class="qt-btn qt-btn-primary qt-btn-l qt-fullwidth">
+                        </div>
+                        <div class="col s12 m1 l1">
+                            <a href="#!" class="qt-btn qt-btn-l qt-btn-secondary qt-fullwidth aligncenter" data-expandable="#qtsearchbar"><i class="dripicons-cross"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+        <!-- SEARCH FORM END ========================= -->
+
+        <div id="maincontent" class="qt-main">
+            <!-- HEROBOX ========================= -->
+            <div class="qt-part-archive-item qt-herobox qt-negative">
+                <div class="qt-item-header">
+                    <div class="qt-header-mid qt-vc ">
+                        <div class="qt-vi">
+                            <div class="qt-container">
+                                <hr class="qt-spacer-m">
+                                <div class="qt-herobox-header">
+                                    <h4>TRANSFORMATIONAL</h4>
+                                    <h4>BREATHWORK</h4>
+                                    <br />
+                                    <h5>Realise your true potential</h5>
+                                    <!-- <h4>YOUR FULL</h4>
+                                    <h1>POTENTIAL</h1> -->
+                                </div>
+                                <div class="qt-details row qt-spacer-m">
+                                    <div class="col s12 m4">
+                                        <h3 class="qt-inline-textdeco"><span>Stress</span></h3>
+                                        <p><i class="qticon-checkmark"></i> <span>Adapt stress response</span></p>
+                                        <p><i class="qticon-checkmark"></i> <span>Strengthen resilience</span></p>
+                                        <p><i class="qticon-checkmark"></i> <span>Regulate nervous system</span></p>
+                                    </div>
+                                    <div class="col s12 m4">
+                                        <h3 class="qt-inline-textdeco"><span>Potential & Capacity</span></h3>
+                                        <p><i class="qticon-checkmark"></i> <span>Help fulfill individual potenital</span></p>
+                                        <p><i class="qticon-checkmark"></i> <span>Reach your full capacity</span></p>
+                                        <p><i class="qticon-checkmark"></i> <span>Find success in your career</span></p>
+                                    </div>
+
+                                    <div class="col s12 m4">
+                                        <h3 class="qt-inline-textdeco"><span>Health and Happiness</span></h3>
+                                        <p><i class="qticon-checkmark"></i> <span>Reduce anxiety & depression</span></p>
+                                        <p><i class="qticon-checkmark"></i> <span>Build mental fitness</span></p>
+                                        <p><i class="qticon-checkmark"></i> <span>Prevent burnout</span></p>
+                                    </div>
+                                </div>
+                                <hr class="qt-spacer-m">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qt-header-bg" data-bgimage="imagestemplate/mountains.jpg" data-parallax="1">
+                    </div>
+                </div>
+            </div>
+            <!-- HEROBOX END ========================= -->
+
+            <!-- ======================= FEATURED SECTION ======================= -->
+            <div class="qt-section qt-content-primary-dark qt-negative qt-vertical-padding-l" data-bgimage="imagestemplate/section-business.jpg" data-bgattachment="" data-parallax="1">
+                <div class="qt-container">
+                    <div class="qt-featured-section">
+                        <div class="qt-featured-section-col">
+                            <h2 class="qt-featured-title">
+                                <span>Master the breath and master life - control breath control health</span>
+                            </h2>
+                        </div>
+                        <div class="qt-featured-section-col">
+                            <h5 class="qt-inline-textdeco"><span>Soemthing here</span></h5>
+                            <h3 class="qt-bottom-textdeco qt-vertical-padding-s"><a href="#">The Breath</a></h3>
+                            <p>
+                            Optimising the breath can truly change an individual’s quality of life, providing renewed energy and productivity, optimising rest, repair, sleep and digestion, boosting the immune system and recalibrating one’s whole outlook on life.
+                            </p>
+                            <p>
+                            Breathwork practice is an ancient eastern system, once considered esoteric is now being fully adopted by high performing organisations as a cutting-edge approach to enabling individuals and teams to realise their true potential / capacity.
+                            </p>
+                            <p>
+                            Breathwork practice is scientifically validated, and the breath is recognised as a direct reflection of and gateway to our physical state and nervous system, with a proven dynamic impact on all physiological systems (immune, digestive, cardiovascular, hormonal, inflammatory etc..).  Breathwork practice can keep us in homeostasis.
+                            </p>    
+                            <p>
+                            Transformational breathwork works at a deep subconscious level to reset and rebalance the nervous system and is a cutting-edge modality for mental health cleanliness.
+                            </p>
+                            <!-- <ul class="qt-list-featured">
+                                <li>Rapid planning method to focus on the results</li>
+                                <li>Focus on your target and achieve your goals faster</li>
+                                <li>Successful personal manager to help you finding your gaps</li>
+                                <li>Captivating seven days coaching system 100% money back</li>
+                                <li>Comprehensive package of tools that you can use every day</li>
+                                <li>Exercises and examples for a deep understanding of the concept</li>
+                                <li>Reference cards for daily review of the concepts and life</li>
+                            </ul> -->
+                            <a class="qt-btn qt-btn-primary"><i class="dripicons-arrow-thin-right"></i> Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <!-- ======================= TESTIMONIAL SLIDER ======================= -->
+            <!-- SLIDESHOW TESTIMONIAL ========================= -->
+            <div class="slider qt-material-slider qt-testimonial-slider">
+                <ul class="slides">
+
+                    <li>
+                        <img src="imagestemplate/mountains.jpg" alt="testimonial">
+                        <div class="qt-slider-caption qt-vc qt-negative">
+                            <div class="qt-vi">
+                                <div class="qt-texts">
+                                    <h3 class="qt-bottom-textdeco"><span>Testimonial</span></h3>
+                                    <p class="qt-textcont qt-thin qt-fontsize-h2 qt-italic">
+                                        Some words here
+                                    </p>
+                                    <h4 class="qt-authorname">Pamela Lovvastus</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="imagestemplate/full-1600-700.jpg" alt="testimonial">
+                        <div class="qt-slider-caption qt-vc qt-negative">
+                            <div class="qt-vi">
+                                <div class="qt-texts">
+                                    <h3 class="qt-bottom-textdeco"><span>Testimonial</span></h3>
+                                    <p class="qt-textcont qt-thin qt-fontsize-h2 qt-italic">
+                                        Some words here
+                                    </p>
+                                    <h4 class="qt-authorname">John Ciuffo</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="imagestemplate/full-1600-700.jpg" alt="testimonial">
+                        <div class="qt-slider-caption qt-vc qt-negative">
+                            <div class="qt-vi">
+                                <div class="qt-texts">
+                                    <h3 class="qt-bottom-textdeco"><span>Testimonial</span></h3>
+                                    <p class="qt-textcont qt-thin qt-fontsize-h2 qt-italic">
+                                        Some words here
+                                    </p>
+                                    <h4 class="qt-authorname">Paul McCarrett</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="qt-control-arrows">
+                    <a href="#!" class="qt-btn qt-btn-l qt-btn-secondary prev qt-slideshow-link"><i class="dripicons-chevron-left"></i></a>
+                    <a href="#!" class="qt-btn qt-btn-l qt-btn-secondary next qt-slideshow-link"><i class="dripicons-chevron-right"></i></a>
+                </div>
+            </div>
+            <!-- SLIDESHOW TESTIMONIAL END ========================= -->
+
+            <!-- ======================= SLIDESHOW EVENTS VERTICAL ======================= -->
+            <div class="qt-section qt-content-primary-dark qt-negative qt-vertical-padding-l" data-bgimage="imagestemplate/section-greatness.jpg" data-bgattachment="fixed" data-parallax="1">
+                <div class="qt-caption-med">
+                    <div class="qt-caption-med-center">
+                        <h2>Achieve Greatness</h2>
+                        <hr>
+                        <h4>Check our calendar and find your event</h4>
+                    </div>
+                </div>
+                <div class="qt-container qt-spacer-l">
+                    <!-- SLIDESHOW POST ================================================== -->
+                    <div class="qt-slickslider-container qt-slickslider-externalarrows">
+                        <div class="row">
+                            <div class="qt-slickslider qt-slickslider-multiple" data-slidestoshow="3" data-variablewidth="false" data-arrows="true" data-dots="false" data-infinite="true" data-centermode="false" data-pauseonhover="true" data-autoplay="false" data-arrowsmobile="false"
+                                data-centermodemobile="true" data-dotsmobile="false" data-slidestoshowmobile="1" data-variablewidthmobile="true" data-infinitemobile="false">
+                                <!-- SLIDESHOW ITEM -->
+                                <div class="qt-item">
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL ========================= -->
+                                    <div class="qt-part-archive-item qt-vertical qt-event-vertical">
+                                        <div class="qt-item-header">
+                                            <div class="qt-header-top">
+                                                <div class="qt-item-metas">
+                                                    <div class="qt-day qt-thin">
+                                                        28
+                                                    </div>
+                                                    <div class="qt-texts qt-capfont">
+                                                        <h5 class="qt-month qt-thin">February 2017</h5>
+                                                        <h5 class="qt-city"><strong>New York</strong></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-mid">
+                                                <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                                    <h3 class="qt-title"><a href="#" class="qt-text-shadow">Breathwork</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg" >
+                                                <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="690">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL END ========================= -->
+                                </div>
+                                <!-- SLIDESHOW ITEM -->
+                                <div class="qt-item">
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL ========================= -->
+                                    <div class="qt-part-archive-item qt-vertical qt-event-vertical">
+                                        <div class="qt-item-header">
+                                            <div class="qt-header-top">
+                                                <div class="qt-item-metas">
+                                                    <div class="qt-day qt-thin">
+                                                        28
+                                                    </div>
+                                                    <div class="qt-texts qt-capfont">
+                                                        <h5 class="qt-month qt-thin">February 2017</h5>
+                                                        <h5 class="qt-city"><strong>New York</strong></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-mid">
+                                                <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                                    <h3 class="qt-title"><a href="#" class="qt-text-shadow">Breathwork</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                                <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL END ========================= -->
+                                </div>
+                                <!-- SLIDESHOW ITEM -->
+                                <div class="qt-item">
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL ========================= -->
+                                    <div class="qt-part-archive-item qt-vertical qt-event-vertical">
+                                        <div class="qt-item-header">
+                                            <div class="qt-header-top">
+                                                <div class="qt-item-metas">
+                                                    <div class="qt-day qt-thin">
+                                                        28
+                                                    </div>
+                                                    <div class="qt-texts qt-capfont">
+                                                        <h5 class="qt-month qt-thin">February 2017</h5>
+                                                        <h5 class="qt-city"><strong>New York</strong></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-mid">
+                                                <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                                    <h3 class="qt-title"><a href="#" class="qt-text-shadow">Breathwork</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                                <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL END ========================= -->
+                                </div>
+                                <!-- SLIDESHOW ITEM -->
+                                <div class="qt-item">
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL ========================= -->
+                                    <div class="qt-part-archive-item qt-vertical qt-event-vertical">
+                                        <div class="qt-item-header">
+                                            <div class="qt-header-top">
+                                                <div class="qt-item-metas">
+                                                    <div class="qt-day qt-thin">
+                                                        28
+                                                    </div>
+                                                    <div class="qt-texts qt-capfont">
+                                                        <h5 class="qt-month qt-thin">February 2017</h5>
+                                                        <h5 class="qt-city"><strong>New York</strong></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-mid">
+                                                <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                                    <h3 class="qt-title"><a href="#" class="qt-text-shadow">Breathwork</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                                <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL END ========================= -->
+                                </div>
+                                <!-- SLIDESHOW ITEM -->
+                                <div class="qt-item">
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL ========================= -->
+                                    <div class="qt-part-archive-item qt-vertical qt-event-vertical">
+                                        <div class="qt-item-header">
+                                            <div class="qt-header-top">
+                                                <div class="qt-item-metas">
+                                                    <div class="qt-day qt-thin">
+                                                        28
+                                                    </div>
+                                                    <div class="qt-texts qt-capfont">
+                                                        <h5 class="qt-month qt-thin">February 2017</h5>
+                                                        <h5 class="qt-city"><strong>New York</strong></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-mid">
+                                                <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                                    <h3 class="qt-title"><a href="#" class="qt-text-shadow">Breathwork</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                                <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ARCHIVE ITEM EVENT VERTICAL END ========================= -->
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDESHOW POST END ================================================== -->
+            </div>
+        </div>
+
+        <!-- ======================= SLIDESHOW EVENTS ======================= -->
+        <!-- SLIDESHOW EVENTS ====================================================== -->
+        <div class="slider qt-material-slider qt-light-slider">
+            <ul class="slides">
+
+                <!-- event item -->
+                <li>
+                    <img src="imagestemplate/full-1600-700.jpg" alt="testimonial">
+                    <div class="qt-slider-caption  qt-vc qt-content-desk">
+                        <div class="qt-vi">
+                            <div class="qt-texts">
+                                <h3 class="qt-bottom-textdeco"><span>Team Work Seminars</span></h3>
+                                <h2 class="qt-capfont qt-spacer-m qt-fontsize-h1">26 Mar 2017</h2>
+                                <h3 class="qt-linktitle"><a href="#">Breathwork</a></h3>
+                                <p class="qt-intro">
+                                    Time, place
+                                </p>
+                                <p class="qt-textcont hide-on-small-only">
+                                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                </p>
+                                <a href="#" class="qt-btn qt-btn qt-btn-primary">Book entry</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- event item end -->
+
+                <!-- event item -->
+                <li>
+                    <img src="imagestemplate/full-1600-700.jpg" alt="testimonial">
+                    <div class="qt-slider-caption  qt-vc qt-content-desk">
+                        <div class="qt-vi">
+                            <div class="qt-texts">
+                                <h3 class="qt-bottom-textdeco"><span>Team Work Events</span></h3>
+                                <h2 class="qt-capfont qt-spacer-m qt-fontsize-h1">03 Apr 2017</h2>
+                                <h3 class="qt-linktitle"><a href="#">Breath your best life</a></h3>
+                                <p class="qt-intro">
+                                    Starts: 18PM at Madison Square Garden
+                                </p>
+                                <p class="qt-textcont hide-on-small-only">
+                                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                </p>
+                                <a href="#" class="qt-btn qt-btn qt-btn-primary">Book entry</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- event item end -->
+
+            </ul>
+            <div class="qt-control-arrows">
+                <a href="#!" class="qt-btn qt-btn-l qt-btn-secondary prev qt-slideshow-link"><i class="dripicons-chevron-left"></i></a>
+                <a href="#!" class="qt-btn qt-btn-l qt-btn-secondary next qt-slideshow-link"><i class="dripicons-chevron-right"></i></a>
+            </div>
+        </div>
+        <!-- SLIDESHOW EVENTS END ====================================================== -->
+
+        <!-- ======================= NEWSLETTER SECTION  ======================= -->
+        <div class="qt-section qt-content-primary-dark qt-negative qt-vertical-padding-l" data-bgimage="imagestemplate/discount.jpg" data-parallax="1">
+            <div class="qt-caption-med">
+                <div class="qt-caption-med-center">
+                    <h2>Join our mailing list</h2>
+                    <hr>
+                    <h4>Subscribe to our newsletter to unlock the benefits of breathwork</h4>
+                </div>
+            </div>
+            <div class="qt-container qt-spacer-s">
+                <p class="center-align">Keep up to date with upcoming breathwork events.</p>
+                <div class="row">
+                    <div class="col s12 m6 push-m3">
+                        <!-- SEARCH FORM ========================= -->
+                        <form method="post" action="#search" class="qt-inline-form qt-spacer-s">
+                            <div class="row qt-nopadding">
+                                <div class="col s12 m8 l9">
+                                    <input placeholder="Your email address here..." value="" name="email" type="text" class="qt-input-l">
+                                </div>
+                                <div class="col s12 m4 l3">
+                                    <input type="submit" value="Submit" class="qt-btn qt-btn-primary qt-btn-l qt-fullwidth">
+                                </div>
+                            </div>
+                        </form>
+                        <!-- SEARCH FORM END ========================= -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- ======================= HERO POST SECTION ======================= -->
+        <div class="qt-container qt-vertical-padding-l">
+            <div class="qt-caption-med">
+                <div class="qt-caption-med-center">
+                    <h2>Blog News</h2>
+                    <hr>
+                    <h4>Readings for daily greatness.</h4>
+                </div>
+            </div>
+            <hr class="qt-spacer-l">
+            <!-- ARCHIVE ITEM POST HERO ========================= -->
+            <div class="qt-part-archive-item qt-part-item-post-hero">
+                <div class="qt-item-header">
+                    <div class="qt-header-top">
+                        <div class="qt-feedback">
+                            <a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="qt-header-mid">
+                        <div class="qt-captions-container qt-decor-side qt-decor-side-right">
+                            <ul class="qt-tags qt-tags-accent">
+                                <li><a href="#">Focus</a></li>
+                            </ul>
+                            <h2 class="qt-title"><a href="#read" class="qt-text-shadow">How to stay focused when your life is too busy and you lose creativity</a></h2>
+                            <div class="qt-the-content qt-spacer-s small hide-on-med-and-down ">
+                                <p class="qt-spacer-s qt-text-shadow qt-strong">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae auctor nisi. Sed bibendum, lectus in fringilla semper, justo lorem commodo dolor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qt-header-bg" data-bgimage="imagestemplate/large-1170-512.jpg">
+                        <img src="imagestemplate/large-1170-512.jpg" alt="Featured image" width="1170" height="512">
+                    </div>
+                </div>
+            </div>
+            <!-- ARCHIVE ITEM POST HERO END ========================= -->
+            <hr class="qt-spacer-m">
+            <h4 class="qt-inline-textdeco"><span>Facts of the week</span></h4>
+            <hr class="qt-spacer-s">
+            <!-- SLIDESHOW POST ================================================== -->
+            <div class="qt-slickslider-container qt-slickslider-externalarrows">
+                <div class="row">
+                    <div class="qt-slickslider qt-slickslider-multiple" data-slidestoshow="3" data-variablewidth="false" data-arrows="true" data-dots="false" data-infinite="true" data-centermode="false" data-pauseonhover="true" data-autoplay="false" data-arrowsmobile="false"
+                        data-centermodemobile="true" data-dotsmobile="true" data-slidestoshowmobile="1" data-variablewidthmobile="true" data-infinitemobile="false">
+                        <!-- SLIDESHOW ITEM -->
+                        <div class="qt-item">
+                            <!-- ARCHIVE ITEM POST VERTICAL ========================= -->
+                            <div class="qt-part-archive-item qt-vertical">
+                                <div class="qt-item-header">
+                                    <div class="qt-header-top">
+                                        <ul class="qt-tags">
+                                            <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                            <li><a href="#">Adventure</a></li>
+                                        </ul>
+                                        <div class="qt-feedback">
+                                            <a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-mid">
+                                        <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                            <p class="qt-strong">03 October 2023</p>
+                                            <h4 class="qt-title"><a href="#" class="qt-text-shadow">Success story of a young spoiled guy</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                        <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ARCHIVE ITEM POST VERTICALEND ========================= -->
+                        </div>
+                        <!-- SLIDESHOW ITEM -->
+                        <div class="qt-item">
+                            <!-- ARCHIVE ITEM POST VERTICAL ========================= -->
+                            <div class="qt-part-archive-item qt-vertical">
+                                <div class="qt-item-header">
+                                    <div class="qt-header-top">
+                                        <ul class="qt-tags">
+                                            <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                            <li><a href="#">Adventure</a></li>
+                                        </ul>
+                                        <div class="qt-feedback">
+                                            <a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-mid">
+                                        <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                             <p class="qt-strong">01 October 2023</p>
+                                            <h4 class="qt-title"><a href="#" class="qt-text-shadow">9 Tips to improve your self relationship</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                        <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ARCHIVE ITEM POST VERTICALEND ========================= -->
+                        </div>
+                        <!-- SLIDESHOW ITEM -->
+                        <div class="qt-item">
+                            <!-- ARCHIVE ITEM POST VERTICAL ========================= -->
+                            <div class="qt-part-archive-item qt-vertical">
+                                <div class="qt-item-header">
+                                    <div class="qt-header-top">
+                                        <ul class="qt-tags">
+                                            <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                            <li><a href="#">Adventure</a></li>
+                                        </ul>
+                                        <div class="qt-feedback">
+                                            <a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-mid">
+                                        <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                            <p class="qt-strong">07 September 2023</p>
+                                            <h4 class="qt-title"><a href="#" class="qt-text-shadow">Quit your job and start living your life</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                        <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ARCHIVE ITEM POST VERTICALEND ========================= -->
+                        </div>
+                        <!-- SLIDESHOW ITEM -->
+                        <div class="qt-item">
+                            <!-- ARCHIVE ITEM POST VERTICAL ========================= -->
+                            <div class="qt-part-archive-item qt-vertical">
+                                <div class="qt-item-header">
+                                    <div class="qt-header-top">
+                                        <ul class="qt-tags">
+                                            <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                            <li><a href="#">Adventure</a></li>
+                                        </ul>
+                                        <div class="qt-feedback">
+                                            <a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-mid">
+                                        <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                             <p class="qt-strong">03 August 2023</p>
+                                            <h4 class="qt-title"><a href="#" class="qt-text-shadow">How to clap your hands when you are bored</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                        <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ARCHIVE ITEM POST VERTICALEND ========================= -->
+                        </div>
+                        <!-- SLIDESHOW ITEM -->
+                        <div class="qt-item">
+                            <!-- ARCHIVE ITEM POST VERTICAL ========================= -->
+                            <div class="qt-part-archive-item qt-vertical">
+                                <div class="qt-item-header">
+                                    <div class="qt-header-top">
+                                        <ul class="qt-tags">
+                                            <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                            <li><a href="#">Adventure</a></li>
+                                        </ul>
+                                        <div class="qt-feedback">
+                                            <a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-mid">
+                                        <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                             <p class="qt-strong">11 May 2023</p>
+                                            <h4 class="qt-title"><a href="#" class="qt-text-shadow">Sunglasses are the real important thing when you want to catch a girl</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                        <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ARCHIVE ITEM POST VERTICALEND ========================= -->
+                        </div>
+                        <!-- SLIDESHOW ITEM -->
+                        <div class="qt-item">
+                            <!-- ARCHIVE ITEM POST VERTICAL ========================= -->
+                            <div class="qt-part-archive-item qt-vertical">
+                                <div class="qt-item-header">
+                                    <div class="qt-header-top">
+                                        <ul class="qt-tags">
+                                            <li><a href="#" class="qt-content-primary-dark">News</a></li>
+                                            <li><a href="#">Adventure</a></li>
+                                        </ul>
+                                        <div class="qt-feedback">
+                                            <a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-mid">
+                                        <div class="qt-captions-container qt-decor-side qt-decor-side-right qt-s">
+                                             <p class="qt-strong">03 January 2023</p>
+                                            <h4 class="qt-title"><a href="#" class="qt-text-shadow">Side effects of lack of oxygen when traveling in high mountains</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="qt-header-bg" data-bgimage="imagestemplate/squared-690-690.jpg">
+                                        <img src="imagestemplate/squared-690-690.jpg" alt="Featured image" width="690" height="302">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ARCHIVE ITEM POST VERTICALEND ========================= -->
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- SLIDESHOW POST END ================================================== -->
+
+
+    <!-- ======================= SPONSORS ======================= -->
+    <div class="qt-vertical-padding-m qt-sponsors qt-section">
+        <h3 class="qt-caption-med"><span>SPONSORS</span></h3>
+        <hr class="qt-spacer-m">
+        <!-- SLIDESHOW SPONSORS ================================================== -->
+        <div class="qt-slickslider-container qt-slickslider-externalarrows qt-slickslider-fullscreen">
+            <div class="row">
+                <div class="qt-slickslider qt-slickslider-multiple qt-text-shadow " data-slidestoshow="6" data-slidestoshowipad="3" data-variablewidth="false" data-arrows="true" data-dots="false" data-infinite="true" data-centermode="false" data-pauseonhover="true" data-autoplay="true"
+                    data-arrowsmobile="false" data-centermodemobile="true" data-dotsmobile="false" data-slidestoshowmobile="1" data-variablewidthmobile="true" data-infinitemobile="false">
+
+                    <!-- SLIDESHOW ITEM -->
+                    <div class="qt-item">
+                        <a href="#" target="_blank" rel="nofollow" class="qt-sponsor">
+                            <img src="imagestemplate/sponsor.png" width="235" height="132" alt="sponsor" class="qt-image-responsive">
+                        </a>
+                    </div>
+
+                    <!-- SLIDESHOW ITEM -->
+                    <div class="qt-item">
+                        <a href="#" target="_blank" rel="nofollow" class="qt-sponsor">
+                            <img src="imagestemplate/sponsor.png" width="235" height="132" alt="sponsor" class="qt-image-responsive">
+                        </a>
+                    </div>
+
+                    <!-- SLIDESHOW ITEM -->
+                    <div class="qt-item">
+                        <a href="#" target="_blank" rel="nofollow" class="qt-sponsor">
+                            <img src="imagestemplate/sponsor.png" width="235" height="132" alt="sponsor" class="qt-image-responsive">
+                        </a>
+                    </div>
+
+                    <!-- SLIDESHOW ITEM -->
+                    <div class="qt-item">
+                        <a href="#" target="_blank" rel="nofollow" class="qt-sponsor">
+                            <img src="imagestemplate/sponsor.png" width="235" height="132" alt="sponsor" class="qt-image-responsive">
+                        </a>
+                    </div>
+
+                    <!-- SLIDESHOW ITEM -->
+                    <div class="qt-item">
+                        <a href="#" target="_blank" rel="nofollow" class="qt-sponsor">
+                            <img src="imagestemplate/sponsor.png" width="235" height="132" alt="sponsor" class="qt-image-responsive">
+                        </a>
+                    </div>
+
+                    <!-- SLIDESHOW ITEM -->
+                    <div class="qt-item">
+                        <a href="#" target="_blank" rel="nofollow" class="qt-sponsor">
+                            <img src="imagestemplate/sponsor.png" width="235" height="132" alt="sponsor" class="qt-image-responsive">
+                        </a>
+                    </div>
+
+                    <!-- SLIDESHOW ITEM -->
+                    <div class="qt-item">
+                        <a href="#" target="_blank" rel="nofollow" class="qt-sponsor">
+                            <img src="imagestemplate/sponsor.png" width="235" height="132" alt="sponsor" class="qt-image-responsive">
+                        </a>
+                    </div>
+
+                    <!-- SLIDESHOW ITEM -->
+                    <div class="qt-item">
+                        <a href="#" target="_blank" rel="nofollow" class="qt-sponsor">
+                            <img src="imagestemplate/sponsor.png" width="235" height="132" alt="sponsor" class="qt-image-responsive">
+                        </a>
+                    </div>
+
+                    <!-- SLIDESHOW ITEM -->
+                    <div class="qt-item">
+                        <a href="#" target="_blank" rel="nofollow" class="qt-sponsor">
+                            <img src="imagestemplate/sponsor.png" width="235" height="132" alt="sponsor" class="qt-image-responsive">
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- SLIDESHOW SPONSORS END ================================================== -->
+    <hr class="qt-spacer-s">
+    </div>
+
+    </div>
+    <!-- .qt-main end -->
+    <div class="qt-footer qt-footerwidgets">
+        <div class="qt-section qt-footer-widgets qt-content-primary-light">
+            <div class="qt-container">
+                <h2 class="qt-footer-logo"><a href="./" class="brand-logo qt-logo-text"><img src="imagestemplate/logo.png" alt="logo"></a></h2>
+                <div class="qt-widgets qt-widgets-footer qt-negative qt-spacer-m row">
+                    <div class="col s12 m3 l3">
+                        <div class="qt-widget">
+                            <h5 class="qt-widget-title qt-inline-textdeco"><span>Stay Connected</span></h5> Subscribe now to the newsletter to receive weekly updates.
+                            <hr class="qt-spacer-s">
+                            <form method="post" action="#newsletter" class="qt-inline-form">
+                                <div class="row qt-nopadding">
+                                    <div class="col s12 m8 l9">
+                                        <input placeholder="Your email" value="" type="text" class="validate qt-input-s">
+                                    </div>
+                                    <div class="col s12 m4 l3">
+                                        <input type="button" value="submit" class="qt-btn qt-btn-secondary qt-btn-s qt-fullwidth">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col s12 m3 l3">
+                        <div class="qt-widget">
+                            <h5 class="qt-widget-title qt-inline-textdeco"><span>Contacts</span></h5>
+                            <div class="qt-widget-contacts">
+                                <p>
+                                    <i class="qticon-home"></i><a href="#">www.breathwell.life</a>
+                                </p>
+                                <p>
+                                    <i class="qticon-at-sign"></i><a href="mailto:info@breathwell.life">info@breathwell.life</a>
+                                </p>
+                                <p>
+                                    <i class="qticon-phone"></i><a href="tel:07970752776">07970 752776</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3 l3">
+                        <div class="qt-widget">
+                            <h5 class="qt-widget-title qt-inline-textdeco"><span>Contacts</span></h5>
+                            <div class="qt-widget-about">
+                                <p>
+                                    Contact us for .....<br>
+                                    <a href="#">Discover more <i class="dripicons-arrow-thin-right"></i></a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3 l3">
+                        <div class="qt-widget">
+                            <h5 class="qt-widget-title qt-inline-textdeco"><span>Main links</span></h5>
+                            <ul class="qt-widget-menu qt-list-chevron">
+                                <li>
+                                    <a href="#">Home page</a>
+                                </li>
+                                <li>
+                                    <a href="#">Events schedule</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="qt-header-bg" data-bgimage="imagestemplate/footer.jpg">
+            </div>
+        </div>
+        <div class="qt-footer-bottom qt-content-primary-dark">
+            <div class="qt-container">
+                <div class="row">
+                    <div class="col s12 m12 l8">
+                        <div class="qt-footertext">
+                            Copyright 2023 <a href="#">BreathWell</a> | Copyright Mick Phipps
+                        </div>
+                        <ul class="qt-menu-footer qt-small qt-list-chevron ">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m12 l4">
+                        <ul class="qt-menu-social">
+                            <li class="right"><a href="#"><i class="qticon-linkedin"></i></a></li>
+                            <li class="right"><a href="#"><i class="qticon-facebook"></i></a></li>
+                            <li class="right"><a href="#"><i class="qticon-twitter"></i></a></li>
+                            <li class="right"><a href="#"><i class="qticon-youtube"></i></a></li>
+                            <li class="right"><a href="#"><i class="qticon-soundcloud"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <!-- QT BODY END ================================ -->
+    <!-- QT FOOTER SCRIPTS ================================ -->
+    <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <!--  JQUERY VERSION MUST MATCH WORDPRESS ACTUAL VERSION (NOW 1.12) -->
+    <script src="js/jquery-migrate.min.js"></script>
+    <!--  JQUERY VERSION MUST MATCH WORDPRESS ACTUAL VERSION (NOW 1.12) -->
+    <!-- Framework -->
+    <script src="js/materializecss/bin/materialize.min.js"></script>
+    <!-- Slick carousel and skrollr -->
+    <script src="components/slick/slick.min.js"></script>
+    <script src="components/skrollr/skrollr.min.js"></script>
+    <!-- Swipebox -->
+    <script src="components/swipebox/lib/ios-orientationchange-fix.js"></script>
+    <script src="components/swipebox/src/js/jquery.swipebox.min.js"></script>
+    <!-- Countdown -->
+    <script src="components/countdown/js/jquery.knob.js"></script>
+    <script src="components/countdown/js/jquery.throttle.js"></script>
+    <script src="components/countdown/js/jquery.classycountdown.min.js"></script>
+    <!-- Popup -->
+    <script src="components/popup/popup.js"></script>
+    <!-- MAIN JAVASCRIPT FILE ================================ -->
+    <script src="js/qt-main.js"></script>
+</body>
+
+</html>
