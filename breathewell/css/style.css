@@ -2700,9 +2700,9 @@
 		position: fixed;
 		bottom: 20px;
 		right: 20px;
-		background: #6d6d6dbf;
+		/* background: #6d6d6dbf; */
 		z-index: 999;
-		background: rgba(98, 98, 98, 0.7);
+		background: #049fa9;
 		width: 50px;
 		height: 50px;
 		display: block;
@@ -3164,7 +3164,7 @@
 		margin: 50px auto;
 		-webkit-animation: breathing 5s ease-out infinite normal;
 		animation: breathing 5s ease-out infinite normal;
-		font-family: 'Libre Baskerville', serif;
+		/* font-family: '', serif; */
 		/* font-size: 16px; */
 		/* background: #3cc8b4;
 		color: #fff; */
@@ -3319,3 +3319,16 @@
 		  filter: blur(0);
 		}
 	  }
+
+/* 
+	  #background-video {
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	  } */
