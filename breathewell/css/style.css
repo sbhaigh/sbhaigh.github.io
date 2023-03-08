@@ -83,19 +83,10 @@
 			Resolution Under 400px
 			Resolution Under 375px
 
-
-	
 ====================================================*/
-
-
-
-
-
-
-
 /*======================
 
-	01. Generel Styles 
+	01. General Styles 
 
 ========================*/
 
@@ -105,14 +96,12 @@
 	
 	@import url(https://fonts.cdnfonts.com/css/patrician);
 
-	@import url(https://fonts.googleapis.com/css2?family=Raleway:400);
+	@import url(https://fonts.googleapis.com/css2?family=Raleway);
 	
 	
 	
 /* Essential Styles
 -------------------------*/
-
-
 
 
 	*{
@@ -202,7 +191,7 @@
 
 	p{
 		margin:0 0 5px;
-		font-family: 'Rubik', sans-serif;
+		font-family: 'Raleway', sans-serif;
 	}
 
 	.clear{
@@ -456,11 +445,11 @@
 
 
 
-	/* .rubik{
-		font-family: 'Rubik', sans-serif;
+	 .rubik{
+		font-family: 'Raleway', sans-serif;
 		
 	}
-
+/*
 	.lato{
 		font-family: 'Lato', sans-serif;
 	}
@@ -1053,7 +1042,7 @@
 		display: inline-block;
 		font-size: 16px;
 		font-weight: 400;
-		font-family: 'Rubik', sans-serif;
+		font-family: 'Raleway', sans-serif;
 		color: #000;
 	}
 	
@@ -1072,7 +1061,7 @@
 	}
 	
 	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-		color: #191919;
+		color: #049fa9;
 		background-color: transparent;
 	}
 	
@@ -1081,7 +1070,7 @@
 		font-weight: bold;
 		font-size: 16px;
 		font-weight: 400;
-		font-family: 'Rubik', sans-serif
+		font-family: 'Raleway', sans-serif
 	}
 	
 	.nav > li > a:focus, .nav > li > a:hover {
@@ -1146,7 +1135,7 @@
 		color: #e5e5e5;
 		font-weight: 400;
 		font-size: 14px;
-		font-family: 'Rubik', sans-serif
+		font-family: 'Raleway', sans-serif
 	}
 	
 	.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
