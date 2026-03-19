@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Steve Haigh</title>
+    <link>http://localhost:53683/tags/</link>
+    <description>Recent content in Tags on Steve Haigh</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:53683/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blockchain</title>
+      <link>http://localhost:53683/tags/blockchain/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53683/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital-Assets</title>
+      <link>http://localhost:53683/tags/digital-assets/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53683/tags/digital-assets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post-Trade</title>
+      <link>http://localhost:53683/tags/post-trade/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53683/tags/post-trade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart-Contracts</title>
+      <link>http://localhost:53683/tags/smart-contracts/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53683/tags/smart-contracts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:53683/tags/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53683/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sample</title>
+      <link>http://localhost:53683/tags/sample/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53683/tags/sample/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
