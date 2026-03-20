@@ -1,7 +1,6 @@
 baseURL = 'https://stevehaigh.net'
 languageCode = 'en-gb'
 title = 'Steve Haigh'
-theme = 'maverick'
 
 [author]
   name = 'Steve Haigh'
