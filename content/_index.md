@@ -2,7 +2,7 @@ I'm a CTO and engineering leader with over 25 years building and operating regul
 
 **Right now:** I'm leading product engineering at **[Tokenovate](https://tokenovate.com)** in Cambridge and London, UK, delivering post-trade automation and settlement for Repo/SFT and Derivatives using the FINOS CDM, with integrations into traditional custodian rails and multiple blockchain networks. That includes working with digital assets and the tokenisation of real-world assets as part of post-trade collateral and settlement workflows.
 
-**What I care about:** Post-trade workflows • Settlement execution • Digital assets • Digital Ledger Technolgies • Blockchains and cross-chain orchestration • Open finance standards ([ISDA](https://www.isda.org), [FINOS](https://www.finos.org)) • scalable and secure cloud architectures • Building high-performing teams that think deeply
+**What I care about:** Post-trade workflows • Settlement execution • Digital assets • Digital Ledger Technologies • Blockchains and cross-chain orchestration • Open finance standards ([ISDA](https://www.isda.org), [FINOS](https://www.finos.org)) • scalable and secure cloud architectures • Building high-performing teams that think deeply
 
 **Previously:** I've built and scaled engineering organisations at [Genomics Plc](https://www.genomicsplc.com), [Azuri Technologies](https://www.azuri-group.com) and [Cambridge Consultants](https://www.cambridgeconsultants.com). At Cambridge Consultants, I founded and led the Internet and Service Software capability, delivering innovative cloud-based digital services for healthcare, energy, satellite telecoms and IoT. I've also delivered platforms serving the NHS, Tier-1 insurers and fintech customers across multiple continents.
 
