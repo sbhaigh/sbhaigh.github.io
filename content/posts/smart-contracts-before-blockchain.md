@@ -9,54 +9,144 @@ tags:
   - blockchain
 ---
 
-A 1990s idea that we've slightly misunderstood
+Smart Contracts Before Blockchain
 
-If you work anywhere near digital assets, you can't really avoid the term smart contract. It gets applied to just about everything. A bit of Solidity code? Smart contract. A DeFi protocol? Smart contract. Anything vaguely automated with a token attached? Probably also a smart contract.
+A 1990s idea we’ve slightly oversold
 
-I've always found that slightly unsatisfying.
+If you listen to enough conversations in digital assets, you’d be forgiven for thinking smart contracts are something that live on blockchains.
 
-Partly because it's imprecise, but mostly because it misses where the idea actually came from.
+They’re not.
 
-The term itself was coined in the 1990s by Nick Szabo, long before anyone was talking about blockchains in any practical sense. He wasn't trying to describe decentralised apps or on-chain execution environments. He was exploring something much more fundamental: whether you could design agreements so that they effectively enforce themselves.
+Or at least, they didn’t start that way. And in my view, they don’t need to.
 
-Not "self-enforcing" in a marketing sense, but in a very literal one. The rules are defined clearly enough, and embedded deeply enough into the system, that the outcome follows automatically. No chasing, no reconciling, no arguing over interpretation after the fact.
+The term itself goes back to the 1990s, when Nick Szabo was writing about whether agreements could be expressed in software and enforced by the system itself. This was well before Bitcoin, long before Ethereum, and long before we started attaching tokens to everything that moves.
 
-His go-to example was a vending machine, which still holds up. You put money in, make a selection, and the machine either gives you the item or it doesn't. That's it. No ambiguity, no middle ground, no operational overhead. It's a contract that just… works.
+His idea was fairly grounded. If you can define the rules of an agreement clearly enough, you can build a system that enforces those rules without needing people in the middle.
 
-There's something quite elegant about that, and also quite unglamorous. Which is probably why the industry has managed to drift away from it.
+The example he used was a vending machine. You put money in, press a button, and if everything lines up, out comes your drink. No reconciliation, no follow-up, no debate about what was meant to happen. It just does what it’s supposed to do.
 
-The word smart hasn't helped. It suggests something clever, maybe even a bit magical. In reality, what Szabo was getting at was the opposite. Not intelligence, but predictability. Not flexibility, but determinism. A smart contract, in the original sense, is just a system where the rules are explicit and the outcome is enforced by design.
+That’s a smart contract in the original sense.
 
-That lands differently if you spend your time in post-trade.
+And importantly, there’s no blockchain anywhere in sight.
 
-A lot of what we do is deal with the fact that contracts don't behave like that. They're written in legal language, interpreted by different systems, processed by different parties, and then reconciled after the fact when things inevitably don't quite line up. There's a huge amount of infrastructure dedicated to working out what should have happened, what actually happened, and whether those two things are close enough.
+Somewhere along the way, the meaning shifted
 
-So when people talk about smart contracts, I think the interesting question isn't "can we run this on a blockchain?" It's "can we remove some of that ambiguity?"
+The association between smart contracts and blockchains really took off with Ethereum. When Ethereum launched in 2015, it explicitly positioned itself as a platform for running “smart contracts”, and that framing stuck.
 
-That was the original idea.
+Since then, the term has been more or less absorbed into blockchain vocabulary. In most conversations today, a smart contract is assumed to be code deployed on a blockchain, typically running inside something like the Ethereum Virtual Machine.
 
-And it's worth saying, because it often gets lost, that none of this required a blockchain. Szabo wasn't imagining code deployed to a global network. He was thinking about software, cryptography, and systems design. The missing piece at the time was a shared, tamper-resistant record that multiple parties could rely on without handing control to a central intermediary.
+That’s understandable, but it’s also a bit of a category mistake.
 
-Blockchain eventually turned up and solved that part of the puzzle, or at least one version of it. But somewhere along the way, the definition of a smart contract got collapsed into "code running on a blockchain", particularly in the Ethereum world.
+Because what Szabo was describing wasn’t tied to any particular infrastructure. It was a property of a system. If a system encodes the rules of an agreement and enforces them automatically, then by that definition, it’s a smart contract. It doesn’t matter whether it runs on a blockchain, a server, or a fairly old bit of embedded hardware.
 
-That's fine as far as it goes, but it's a fairly narrow interpretation.
+A vending machine qualifies.
 
-In fact, I'd argue it's a bit of a distraction in capital markets.
+So does any piece of software that deterministically enforces an agreement between parties.
 
-Because the problem we're trying to solve isn't really about where code runs. It's about whether the meaning of a contract can be expressed clearly enough that its lifecycle becomes deterministic. That's a much harder problem, and a much more interesting one. It involves legal terms, market conventions, lifecycle events, edge cases, and all the messiness that comes with real financial products.
+Which means the idea is much broader, and much more useful, than the current shorthand suggests.
 
-You don't get very far with that if you treat everything as an application to be deployed.
+The real problem: contracts aren’t simple
 
-From where I sit, working in post-trade and digital assets, the opportunity is less about inventing new kinds of contracts and more about making existing ones behave properly. Less ambiguity, less reconciliation, more shared understanding of state. That's where the operational gains are, and it's where things start to get properly scalable.
+All of that works nicely for simple systems.
 
-Which brings it back to Szabo.
+If the rules are clear, the inputs are known, and the outcomes are limited, then automating the agreement is entirely sensible. In those cases, code is exactly what you want. It removes ambiguity, enforces consistency, and gets rid of a lot of unnecessary operational overhead.
 
-The core idea still holds up remarkably well. Define the rules clearly enough, and the system can do the enforcing. Everything else is implementation detail.
+But most real contracts, particularly in financial markets, don’t look like that.
 
-Blockchain is one way of doing it. Not the only way, and not always the best one.
+They’re long-lived, nuanced, and full of edge cases. Terms get amended. Events occur that no one quite anticipated. Different parts of the agreement interact in ways that only become clear over time. And when something doesn’t line up neatly, the answer isn’t sitting there waiting in a function call.
 
-We've spent the last few years getting quite excited about the plumbing, which is understandable. But the interesting work, at least from a capital markets perspective, is still in the contract itself. What it means, how it evolves, and whether two parties can look at it and arrive at the same conclusion without a small army of systems and people in the middle.
+It’s worked out through interpretation.
 
-That's the bit we haven't quite cracked yet.
+That’s the bit the “smart contract” narrative tends to gloss over. Real contracts aren’t just about execution. They’re about meaning. They’re written in a way that leaves room for context, intent and, occasionally, disagreement. Not because lawyers enjoy ambiguity, but because the real world doesn’t fit neatly into predefined branches of logic.
 
-And it's probably the bit that matters most.
+And when things do go wrong, as they inevitably do, you don’t turn to the code and say “that’s final”.
+
+You go back to the contract.
+
+And very often, to the lawyers.
+
+Code is not law
+
+There’s a phrase that crops up from time to time: code is law.
+
+I’ve never found that particularly convincing in the context of capital markets.
+
+Code is precise. It does exactly what it’s told. That’s its strength. But it only deals with what has been explicitly modelled. It doesn’t cope well with ambiguity, conflicting interpretations, or situations that sit outside what anyone thought to encode at the outset.
+
+Law is different. It exists precisely to deal with those situations. It handles intent, context, judgement, and the messy edge cases that don’t fit neatly into a predefined structure.
+
+Trying to collapse one into the other doesn’t really work.
+
+You can encode a lot of behaviour in code. You can make systems highly deterministic. But you can’t realistically capture every possible outcome of a complex financial agreement, and you certainly can’t remove the need for interpretation when something unexpected happens.
+
+At that point, the “smart” contract isn’t particularly smart. It’s just rigid.
+
+This isn’t about blockchain
+
+It’s also worth being clear that none of this is an argument against blockchain.
+
+Blockchains are useful. They give you shared state, tamper resistance, and a way for multiple parties to agree on outcomes without a central operator. That’s valuable.
+
+But they’re not what makes something a smart contract.
+
+The industry has slightly conflated the two ideas. Smart contracts became “things that run on blockchains”, when in reality they’re just systems that enforce agreements automatically.
+
+Blockchain is one way of doing that.
+
+Not the only way.
+
+Where this shows up in practice
+
+From where I sit, working in post-trade and digital assets, this distinction matters quite a lot.
+
+A big part of what we’re doing at <a href="https://tokenovate.com" target="_blank" rel="noopener noreferrer">Tokenovate</a> is building systems that codify the lifecycle of financial products. In particular, using the <a href="https://cdm.finos.org" target="_blank" rel="noopener noreferrer">FINOS Common Domain Model (CDM)</a> to represent the rules of derivatives and securities financing transactions, based on things like ISDA and GMRA agreements.
+
+In many ways, that is exactly what Szabo was getting at.
+
+You take the economic terms, the lifecycle events, the allowable state transitions, and you express them in a form that a system can apply deterministically. If an event is valid, it moves the contract from one state to another. If it isn’t, it doesn’t.
+
+By any reasonable definition, that’s a smart contract.
+
+And it doesn’t need to sit on a blockchain to be one.
+
+But it still isn’t the whole contract
+
+Even then, it’s not complete.
+
+You can codify a great deal of the lifecycle. You can make behaviour far more deterministic than it is today. You can remove a lot of reconciliation and ambiguity from the operational layer.
+
+But you can’t capture everything.
+
+There will always be edge cases. There will always be scenarios that weren’t anticipated. There will always be moments where interpretation matters, where the wording of the legal agreement takes precedence, and where the system doesn’t have a definitive answer.
+
+At that point, you fall back to the legal contract.
+
+And, usually, to the lawyers.
+
+So what are smart contracts, really?
+
+If you strip away the hype, smart contracts are best understood as:
+
+systems that automate the well-defined parts of an agreement.
+
+That’s already useful. In fact, it’s quite powerful. But it’s not the same as replacing the agreement itself, and it’s not the same as eliminating ambiguity altogether.
+
+In simple systems, smart contracts work well.
+
+In complex financial instruments, they’re only part of the picture.
+
+Closing thought
+
+The original idea behind smart contracts still stands up. If you can define the rules clearly enough, you can get the system to enforce them.
+
+That’s worth pursuing.
+
+But it only takes you so far.
+
+You can automate the predictable bits. You can make execution cleaner. You can reduce the need for trust in process.
+
+But you can’t write code for every edge case. You can’t eliminate ambiguity entirely. And you can’t replace the role of legal interpretation when things get difficult.
+
+So yes, smart contracts are useful.
+
+But they’re not quite as smart as we sometimes make them out to be. Oh, and they don't have to live on a blockchain.

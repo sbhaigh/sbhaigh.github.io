@@ -30,6 +30,11 @@ title = 'Steve Haigh'
     url = "/about/"
     weight = "-110"
   [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = -150
+  [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"

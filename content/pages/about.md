@@ -19,7 +19,7 @@ Before Tokenovate, I led engineering organisations across a range of sectors:
 
 - At [Genomics Plc](https://www.genomicsplc.com), I led engineering for precision health platforms in highly regulated clinical settings.
 - At [Azuri Technologies](https://www.azuri-group.com), I helped scale cloud and payments systems serving around 200k customers in sub-Saharan Africa.
-- At [Cambridge Consultants](https://www.cambridgeconsultants.com), I built and led the Internet and Service Software capability, delivering cloud-based digital services across healthcare, energy, and IoT.
+- At [Cambridge Consultants](https://www.cambridgeconsultants.com), I built and led the Internet and Service Software capability, delivering cloud-based digital services across satellite telecoms, healthcare, energy, and IoT.
 
 Across these roles, I have built and scaled multidisciplinary teams, delivered large programmes, and operated under strong governance requirements including ISO 27001, SOC 2, DORA, ISO 13485, and HIPAA.
 

@@ -8,7 +8,7 @@
         {{ partial "header.html" . }}
         <section>
           <h2 class="post">{{ .Title }}</h2>
-          {{ .Content }} {{ if ne .Section "pages" }}
+          {{ if ne .Section "pages" }}
           <div class="post-date">
             <span class="g time">{{.Date.Format "January 2, 2006"}} </span>
             &#8729; {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }} {{
@@ -17,7 +17,7 @@
             <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
             {{- end -}} {{- end -}} {{ end }}
           </div>
-          {{ end }}
+          {{ end }} {{ .Content }}
         </section>
         {{ if eq .Section "posts" }} {{ if eq .Site.Params.comments.enabled true
         }}

@@ -253,6 +253,38 @@ header ul a:first-child {
   flex: 0 1 auto;
 }
 
+.term-groups {
+  display: grid;
+  gap: 2rem;
+}
+
+.term-group {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.term-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.term-title a {
+  text-decoration: none;
+}
+
+.term-count {
+  color: #6b7280;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.term-posts {
+  margin: 0;
+}
+
 .hr-list {
   margin-top: 0;
   margin-bottom: 0;
