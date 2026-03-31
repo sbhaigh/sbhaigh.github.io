@@ -1,4 +1,4 @@
-I'm a CTO and engineering leader with over 25 years building and operating regulated software platforms. I'm passionate about how well-designed technology and digital services solve real-world problems—from healthcare and energy access to financial infrastructure—and the human and technical practices that make that possible at scale.
+I'm a Chief Technology Officer and engineering leader with over 25 years building and operating regulated software platforms. I'm passionate about how well-designed technology and digital services solve real-world problems—from healthcare and energy access to financial infrastructure—and the human and technical practices that make that possible at scale.
 
 **Right now:** I'm leading product engineering at **[Tokenovate](https://tokenovate.com)** in Cambridge and London, UK, delivering post-trade automation and settlement for Repo/SFT and Derivatives using the FINOS CDM, with integrations into traditional custodian rails and multiple blockchain networks. That includes working with digital assets and the tokenisation of real-world assets as part of post-trade collateral and settlement workflows.
 
