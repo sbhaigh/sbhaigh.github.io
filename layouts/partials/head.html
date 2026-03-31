@@ -16,6 +16,18 @@
     <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}/feed.json" />
     <link rel="shortcut icon" type="image/svg+xml" href="{{ .Site.Params.logo | absURL }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    <script>
+        (() => {
+            try {
+                const savedTheme = localStorage.getItem('theme-preference');
+
+                if (savedTheme === 'terminal' || savedTheme === 'light') {
+                    document.documentElement.setAttribute('data-theme', savedTheme);
+                }
+            } catch (error) {
+            }
+        })();
+    </script>
     {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
     <style>{{ $styles.Content | safeCSS }}</style>
   
@@ -91,6 +103,49 @@
             const burger = document.querySelector('.burger');
             const nav = document.querySelector('.nav-menu');
             const header = document.querySelector('header');
+            const root = document.documentElement;
+            const themeToggle = document.querySelector('.theme-toggle');
+
+            const syncThemeToggle = () => {
+                if (!themeToggle) {
+                    return;
+                }
+
+                const savedTheme = root.getAttribute('data-theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const isTerminal = savedTheme ? savedTheme === 'terminal' : prefersDark;
+
+                themeToggle.setAttribute('aria-pressed', String(isTerminal));
+                themeToggle.dataset.theme = isTerminal ? 'terminal' : 'light';
+            };
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const currentTheme = root.getAttribute('data-theme');
+                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    const isTerminal = currentTheme ? currentTheme === 'terminal' : prefersDark;
+                    const nextTheme = isTerminal ? 'light' : 'terminal';
+
+                    root.setAttribute('data-theme', nextTheme);
+
+                    try {
+                        localStorage.setItem('theme-preference', nextTheme);
+                    } catch (error) {
+                    }
+
+                    syncThemeToggle();
+                });
+
+                const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+                if (typeof mediaQuery.addEventListener === 'function') {
+                    mediaQuery.addEventListener('change', syncThemeToggle);
+                } else if (typeof mediaQuery.addListener === 'function') {
+                    mediaQuery.addListener(syncThemeToggle);
+                }
+
+                syncThemeToggle();
+            }
         
             if (burger) {
                 burger.addEventListener('click', () => {

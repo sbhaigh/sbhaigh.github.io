@@ -8,11 +8,6 @@ tags:
   - post-trade
   - blockchain
 ---
-
-Smart Contracts Before Blockchain
-
-A 1990s idea we’ve slightly oversold
-
 If you listen to enough conversations in digital assets, you’d be forgiven for thinking smart contracts are something that live on blockchains.
 
 They’re not.

@@ -3,7 +3,7 @@ title: About
 author: Steve Haigh
 ---
 
-I am Steve Haigh, a CTO and product-led engineering leader based in Cambridge and London, UK.
+I am Steve Haigh, a Chief Technology Officer and product-led engineering leader based in Cambridge and London, UK.
 
 For the last 25+ years I have been building digital platforms in regulated environments, from capital markets and fintech to healthcare and telecoms. I enjoy taking complex domains and turning them into practical, reliable systems that teams and customers can trust.
 
