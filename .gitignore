@@ -198,6 +198,9 @@ db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
+
+# Large local media (serve locally, do not commit)
+static/assets/videos/*.mp4
 instance/
 .webassets-cache
 

@@ -113,6 +113,28 @@ body {
   top: 0;
 }
 
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--color-border-soft);
+  z-index: 200;
+  pointer-events: none;
+}
+
+.reading-progress-bar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: var(--color-accent);
+  box-shadow: 0 0 6px var(--color-accent-glow-soft);
+  transition: transform 0.08s linear;
+}
+
 // h1, h2, h3, h4, h5, strong, b {
 //     font-size: inherit;
 //     font-weight: 600;
@@ -227,10 +249,10 @@ header {
   align-items: center;
   gap: 0.45rem;
   padding: 0.2rem 0.55rem;
-  border: 1px solid var(--color-border);
+  border: 1px solid #dddddd;
   border-radius: 999px;
-  background: var(--color-surface);
-  color: var(--color-muted);
+  background: #eeeeee;
+  color: #777777;
   cursor: pointer;
   font: inherit;
   font-size: 0.82rem;
@@ -248,8 +270,8 @@ header {
 }
 
 .theme-toggle:hover {
-  color: var(--color-fg);
-  border-color: var(--color-rule);
+  color: #000000;
+  border-color: #cccccc;
 }
 
 .theme-toggle:focus-visible {
@@ -261,20 +283,45 @@ header {
   width: 0.65rem;
   height: 0.65rem;
   border-radius: 50%;
-  border: 1px solid var(--color-border);
+  border: 1px solid #dddddd;
   background: transparent;
   transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.theme-toggle[aria-pressed="true"] {
-  color: var(--color-link-stronger);
-  border-color: var(--color-rule);
+.theme-toggle[data-theme="paper"] {
+  background: #eeeeee;
+  color: #777777;
+  border-color: #dddddd;
 }
 
-.theme-toggle[aria-pressed="true"] .theme-toggle-indicator {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
-  box-shadow: 0 0 6px var(--color-accent-glow-soft), 0 0 12px var(--color-accent-glow-strong);
+.theme-toggle[data-theme="paper"]:hover {
+  background: #f2f2f2;
+  color: #000000;
+  border-color: #cccccc;
+}
+
+.theme-toggle[data-theme="paper"] .theme-toggle-indicator {
+  background: #777777;
+  border-color: #666666;
+  box-shadow: none;
+}
+
+.theme-toggle[data-theme="terminal"] {
+  background: #0d1d13;
+  color: #c6f5d1;
+  border-color: #2f6a41;
+}
+
+.theme-toggle[data-theme="terminal"]:hover {
+  background: #112518;
+  color: #e4ffea;
+  border-color: #3ccf6d;
+}
+
+.theme-toggle[data-theme="terminal"] .theme-toggle-indicator {
+  background: #3ccf6d;
+  border-color: #3ccf6d;
+  box-shadow: 0 0 6px rgba(60, 207, 109, 0.55), 0 0 12px rgba(60, 207, 109, 0.28);
 }
 
 header a {
@@ -465,6 +512,71 @@ hr {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.post-video {
+  margin: 1.5rem 0;
+}
+
+.post-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: var(--color-surface);
+}
+
+.post-video figcaption {
+  margin-top: 0.55rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.youtube-embed .youtube-cover,
+.youtube-embed iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: var(--color-surface);
+}
+
+.youtube-embed .youtube-cover {
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.youtube-embed .youtube-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.youtube-cover-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.38rem 0.72rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.youtube-embed .youtube-cover:hover .youtube-cover-play {
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.youtube-embed iframe {
+  border: 1px solid var(--color-border);
 }
 
 .post-date {
