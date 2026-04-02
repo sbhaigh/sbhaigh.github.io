@@ -1,0 +1,20 @@
+{{ $id := .Get "id" }}
+{{ $url := .Get "url" }}
+{{ if and (not $id) $url }}
+  {{ $id = replaceRE "^.*(?:v=|youtu\\.be/)([^&?#]+).*$" "$1" $url }}
+{{ end }}
+{{ if $id }}
+  {{ $title := .Get "title" | default "YouTube video" }}
+  {{ $poster := .Get "poster" | default (printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" $id) }}
+<figure class="post-video youtube-embed">
+  <button class="youtube-cover" type="button" data-youtube-id="{{ $id }}" data-youtube-title="{{ $title }}" aria-label="Play {{ $title }}">
+    <img src="{{ $poster }}" alt="{{ $title }} cover image" loading="lazy" decoding="async">
+    <span class="youtube-cover-play" aria-hidden="true">Play</span>
+  </button>
+  {{ with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>
+{{ else }}
+<p>YouTube shortcode error: missing id or url parameter.</p>
+{{ end }}

@@ -16,7 +16,7 @@ Last week at London Blockchain Conference, I presented a tech talk on the innova
 
 The core message was simple: moving from pilots to production in capital markets requires more than tokenising assets in isolation. You need a practical workflow that connects tokenised real-world assets, tokenised cash, and deterministic post-trade execution.
 
-[Watch the tech talk on YouTube](https://www.youtube.com/watch?v=UmfwE93BN6E)
+{{< youtube id="UmfwE93BN6E" title="Tokenisation of RWAs, Cash and Atomic Settlement" caption="Watch the tech talk from London Blockchain Conference." >}}
 
 ## What I covered
 
