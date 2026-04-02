@@ -105,6 +105,19 @@
             const header = document.querySelector('header');
             const root = document.documentElement;
             const themeToggle = document.querySelector('.theme-toggle');
+            const themeToggleLabel = document.querySelector('.theme-toggle-label');
+            const readingProgressBar = document.querySelector('.reading-progress-bar');
+
+            const syncReadingProgress = () => {
+                if (!readingProgressBar) {
+                    return;
+                }
+
+                const maxScroll = root.scrollHeight - root.clientHeight;
+                const progress = maxScroll > 0 ? Math.min(root.scrollTop / maxScroll, 1) : 0;
+
+                readingProgressBar.style.transform = `scaleX(${progress})`;
+            };
 
             const syncThemeToggle = () => {
                 if (!themeToggle) {
@@ -114,9 +127,15 @@
                 const savedTheme = root.getAttribute('data-theme');
                 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                 const isTerminal = savedTheme ? savedTheme === 'terminal' : prefersDark;
+                const nextThemeLabel = isTerminal ? 'paper' : 'terminal';
 
-                themeToggle.setAttribute('aria-pressed', String(isTerminal));
-                themeToggle.dataset.theme = isTerminal ? 'terminal' : 'light';
+                themeToggle.setAttribute('aria-pressed', String(!isTerminal));
+                themeToggle.dataset.theme = isTerminal ? 'paper' : 'terminal';
+                themeToggle.setAttribute('aria-label', `Switch to ${nextThemeLabel} theme`);
+
+                if (themeToggleLabel) {
+                    themeToggleLabel.textContent = nextThemeLabel;
+                }
             };
 
             if (themeToggle) {
@@ -145,6 +164,12 @@
                 }
 
                 syncThemeToggle();
+            }
+
+            if (readingProgressBar) {
+                window.addEventListener('scroll', syncReadingProgress, { passive: true });
+                window.addEventListener('resize', syncReadingProgress);
+                syncReadingProgress();
             }
         
             if (burger) {
